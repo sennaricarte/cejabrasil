@@ -1,0 +1,136 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import heroPcd from '../assets/pcd/hero-pcd.jpg';
+import metodologiaPcd from '../assets/pcd/metodologia-pcd.jpg';
+import depoimentoRh from '../assets/pcd/depoimento-rh.jpg';
+---
+
+<Layout
+	title="Inclusão de PCD | Consultoria e Recrutamento Especializado"
+	description="Consultoria em inclusão de PCD com foco em cota de PCD, lei de cotas, recrutamento inclusivo e acessibilidade corporativa para empresas."
+	keywords="cota de pcd, lei de cotas, recrutamento inclusivo, acessibilidade corporativa, inclusão produtiva, consultoria pcd"
+>
+	<section class="relative overflow-hidden bg-white py-20">
+		<div class="pointer-events-none absolute -left-8 top-20 h-24 w-24 rounded-full bg-ceja-yellow/25"></div>
+		<div class="pointer-events-none absolute right-8 top-24 h-20 w-20 rounded-full bg-ceja-blue/20"></div>
+
+		<div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Inclusão de PCD</p>
+				<h1 class="mt-4 text-4xl font-extrabold leading-tight text-[#0a1d37] sm:text-5xl">
+					Transforme a Cota Legal em Valor Real para sua Empresa
+				</h1>
+				<p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
+					Muito além do cumprimento da lei, promovemos a inclusão produtiva com suporte técnico, mapeamento de cargos e acompanhamento especializado.
+				</p>
+				<a
+					href="#contato-pcd"
+					class="mt-8 inline-flex rounded-full bg-ceja-yellow px-7 py-3 text-base font-bold text-black transition hover:brightness-95"
+				>
+					Solicitar Consultoria Gratuita
+				</a>
+			</div>
+
+			<div class="relative mx-auto w-full max-w-xl">
+				<div class="pointer-events-none absolute -left-4 top-7 h-10 w-28 rounded-full bg-ceja-blue/20"></div>
+				<div class="pointer-events-none absolute -right-5 bottom-10 h-16 w-16 rounded-full bg-ceja-yellow/35"></div>
+				<div class="overflow-hidden rounded-[2.5rem] border-8 border-white shadow-2xl">
+					<Image
+						src={heroPcd}
+						alt="Profissional PCD em ambiente corporativo moderno"
+						width={1600}
+						height={1067}
+						format="webp"
+						quality="mid"
+						class="h-[420px] w-full object-cover"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-slate-50 py-20">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-3xl text-center">
+				<h2 class="text-3xl font-bold text-ceja-dark sm:text-4xl">Nossa Metodologia</h2>
+				<p class="mt-4 text-slate-600">
+					Atuação técnica para garantir recrutamento inclusivo, aderência à lei de cotas e integração sustentável.
+				</p>
+			</div>
+
+			<div class="mt-10 grid gap-6 md:grid-cols-3">
+				<article class="rounded-3xl bg-white p-6 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+					<p class="text-sm font-semibold text-ceja-blue">Pilar 01</p>
+					<h3 class="mt-2 text-xl font-bold text-ceja-dark">Mapeamento de Perfil</h3>
+					<p class="mt-3 text-sm text-slate-600">Entendemos as necessidades da vaga e os requisitos de acessibilidade para contratação assertiva.</p>
+				</article>
+				<article class="rounded-3xl bg-white p-6 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+					<p class="text-sm font-semibold text-ceja-blue">Pilar 02</p>
+					<h3 class="mt-2 text-xl font-bold text-ceja-dark">Recrutamento Assertivo</h3>
+					<p class="mt-3 text-sm text-slate-600">Busca ativa em bancos especializados para encontrar talentos alinhados ao perfil e à cultura da empresa.</p>
+				</article>
+				<article class="rounded-3xl bg-white p-6 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+					<p class="text-sm font-semibold text-ceja-blue">Pilar 03</p>
+					<h3 class="mt-2 text-xl font-bold text-ceja-dark">Sensibilização de Equipe</h3>
+					<p class="mt-3 text-sm text-slate-600">Treinamos o time para receber o novo colaborador com respeito, preparo e foco em inclusão efetiva.</p>
+				</article>
+			</div>
+
+			<div class="mt-8 overflow-hidden rounded-3xl border-l-8 border-ceja-yellow bg-white p-7 shadow-[0_14px_35px_-22px_rgba(15,23,42,0.5)]">
+				<p class="text-sm font-semibold uppercase tracking-wide text-ceja-blue">Destaque Jurídico - Lei 8.213/91</p>
+				<p class="mt-3 text-lg font-semibold text-ceja-dark">
+					Garanta a conformidade da sua empresa com quem entende de inclusão há anos.
+				</p>
+				<p class="mt-2 text-sm text-slate-600">
+					Oferecemos orientação especializada para cumprimento da cota de PCD, mitigação de riscos trabalhistas e fortalecimento da governança em diversidade.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-white py-20">
+		<div class="mx-auto grid w-full max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<div class="overflow-hidden rounded-[2rem] border-8 border-white shadow-xl">
+				<Image
+					src={metodologiaPcd}
+					alt="Equipe corporativa em discussão sobre acessibilidade e inclusão"
+					width={1400}
+					height={933}
+					format="webp"
+					quality="mid"
+					class="h-[360px] w-full object-cover"
+				/>
+			</div>
+			<article class="rounded-3xl bg-slate-50 p-8 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Depoimento de Parceiro</p>
+				<blockquote class="mt-4 text-lg leading-relaxed text-slate-700">
+					“O CEJA Brasil trouxe segurança no processo de inclusão e humanizou toda a jornada. Hoje, nossa contratação de PCD é estratégica, organizada e com impacto real no clima da empresa.”
+				</blockquote>
+				<p class="mt-4 text-sm font-semibold text-ceja-dark">Gerência de RH - Empresa Parceira</p>
+			</article>
+		</div>
+	</section>
+
+	<section id="contato-pcd" class="bg-slate-100 py-20">
+		<div class="mx-auto grid w-full max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<div>
+				<h2 class="text-3xl font-bold text-ceja-dark sm:text-4xl">Vamos estruturar sua inclusão de PCD com segurança e resultado</h2>
+				<p class="mt-4 text-slate-600">
+					Fale com nossa equipe para iniciar um plano de recrutamento inclusivo e acessibilidade corporativa sob medida para sua operação.
+				</p>
+			</div>
+			<div class="overflow-hidden rounded-[2rem] border-8 border-white shadow-xl">
+				<Image
+					src={depoimentoRh}
+					alt="Reunião entre profissionais de RH sobre inclusão de PCD"
+					width={1400}
+					height={933}
+					format="webp"
+					quality="mid"
+					class="h-[320px] w-full object-cover"
+				/>
+			</div>
+		</div>
+	</section>
+</Layout>

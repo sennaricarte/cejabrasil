@@ -1,0 +1,92 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import heroVagas from '../assets/vagas/hero-vagas.jpg';
+import cardVagas from '../assets/vagas/card-vagas.jpg';
+---
+
+<Layout
+	title="Vagas CEJA Brasil | Banco de Talentos para Jovem Aprendiz, Estágio e PCD"
+	description="Cadastre seu currículo no banco de talentos do CEJA Brasil para receber oportunidades de Jovem Aprendiz, Estágio e vagas para PCD."
+	keywords="banco de talentos, vagas ceja brasil, jovem aprendiz, estágio, vagas pcd, cadastrar currículo"
+>
+	<section class="relative overflow-hidden bg-white py-20">
+		<div class="pointer-events-none absolute -left-8 top-16 h-24 w-24 rounded-full bg-ceja-yellow/25"></div>
+		<div class="pointer-events-none absolute right-8 top-24 h-20 w-20 rounded-full bg-ceja-blue/20"></div>
+
+		<div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Banco de Talentos CEJA Brasil</p>
+				<h1 class="mt-4 text-4xl font-extrabold leading-tight text-[#0a1d37] sm:text-5xl">Sua carreira começa aqui</h1>
+				<p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
+					Cadastre seu currículo em nosso banco de talentos e seja avisado assim que surgirem oportunidades de Jovem Aprendiz, Estágio ou vagas para PCD.
+				</p>
+			</div>
+
+			<div class="relative mx-auto w-full max-w-xl">
+				<div class="pointer-events-none absolute -left-4 top-7 h-10 w-28 rounded-full bg-ceja-blue/20"></div>
+				<div class="pointer-events-none absolute -right-5 bottom-10 h-16 w-16 rounded-full bg-ceja-yellow/35"></div>
+				<div class="overflow-hidden rounded-[2.5rem] border-8 border-white shadow-2xl">
+					<Image
+						src={heroVagas}
+						alt="Jovens felizes em ambiente de estudo e preparação para o mercado de trabalho"
+						width={1600}
+						height={1067}
+						format="webp"
+						quality="mid"
+						class="h-[420px] w-full object-cover"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-slate-50 py-20">
+		<div class="mx-auto grid w-full max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<article class="relative overflow-hidden rounded-[2.5rem] bg-white p-8 shadow-[0_16px_38px_-24px_rgba(15,23,42,0.45)] sm:p-10">
+				<div class="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-ceja-yellow/20"></div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Sou Candidato</p>
+				<h2 class="mt-4 text-3xl font-bold text-ceja-dark">Envie seu currículo para o Banco de Talentos</h2>
+				<p class="mt-4 text-slate-600">
+					Se você busca oportunidade como Jovem Aprendiz, estagiário ou profissional PCD, cadastre-se agora para participar dos próximos processos seletivos.
+				</p>
+				<a
+					href="https://forms.google.com"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="mt-8 inline-flex rounded-full bg-ceja-yellow px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-black transition hover:brightness-95"
+				>
+					Cadastrar Currículo
+				</a>
+				<div class="mt-8 overflow-hidden rounded-3xl">
+					<Image
+						src={cardVagas}
+						alt="Jovens profissionais em ambiente corporativo moderno"
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-52 w-full object-cover"
+					/>
+				</div>
+			</article>
+
+			<article class="relative overflow-hidden rounded-[2.5rem] bg-ceja-blue p-8 text-white shadow-[0_16px_38px_-24px_rgba(15,23,42,0.45)] sm:p-10">
+				<div class="pointer-events-none absolute -left-12 -bottom-12 h-36 w-36 rounded-full bg-white/10"></div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-yellow">Dicas para Entrevistas</p>
+				<h2 class="mt-4 text-3xl font-bold">Como se destacar no processo seletivo</h2>
+				<ul class="mt-6 space-y-4 text-sm leading-relaxed text-slate-100">
+					<li>
+						<span class="font-bold text-ceja-yellow">1.</span> Pesquise sobre a empresa e demonstre interesse genuíno pela vaga.
+					</li>
+					<li>
+						<span class="font-bold text-ceja-yellow">2.</span> Organize exemplos reais das suas experiências, mesmo acadêmicas ou voluntárias.
+					</li>
+					<li>
+						<span class="font-bold text-ceja-yellow">3.</span> Mostre postura profissional: pontualidade, comunicação clara e atitude colaborativa.
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+</Layout>

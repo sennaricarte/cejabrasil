@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+	--color-ceja-yellow: #FDCB08;
+	--color-ceja-blue: #0081C9;
+	--color-ceja-dark: #1a1a1a;
+	--font-sans: 'Lexend', 'Inter', system-ui, -apple-system, sans-serif;
+	--font-rounded: 'Lexend', 'Inter', system-ui, -apple-system, sans-serif;
+	--radius-extra-rounded: 2rem;
+}

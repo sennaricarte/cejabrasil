@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "title": "Sua empresa foca no negócio, o CEJA cuida do talento e da burocracia.",
+    "subtitle": "Soluções completas em Jovem Aprendiz, Estágio e Inclusão de PCD com 100% de segurança jurídica e suporte administrativo."
+  },
+  "beneficios": [
+    {
+      "titulo": "Redução de Custos",
+      "descricao": "Isenção de encargos e consultoria gratuita para implementar programas de aprendizagem, estágio e inclusão com eficiência."
+    },
+    {
+      "titulo": "Segurança Jurídica",
+      "descricao": "Gestão completa de contratos, prazos e conformidade legal, incluindo obrigações da Lei de Cotas e Lei da Aprendizagem."
+    },
+    {
+      "titulo": "Impacto Social",
+      "descricao": "Fortaleça sua marca empregadora como empresa inclusiva e socialmente responsável com impacto real na comunidade."
+    },
+    {
+      "titulo": "Agilidade no Recrutamento",
+      "descricao": "Banco de talentos pré-selecionados, triagem assertiva e encaminhamento rápido de perfis alinhados ao seu negócio."
+    }
+  ],
+  "fluxoAtendimento": [
+    "Diagnóstico das Vagas",
+    "Recrutamento e Seleção",
+    "Gestão de Documentos",
+    "Acompanhamento Mensal"
+  ]
+}

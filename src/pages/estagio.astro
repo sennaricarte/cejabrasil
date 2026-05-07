@@ -1,0 +1,188 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import heroEstagio from '../assets/estagio/hero-estagio.jpg';
+import corporativoEstagio from '../assets/estagio/corporativo-estagio.jpg';
+import parceriaEscolaConsultor from '../assets/estagio/parceria-escola-consultor.jpg';
+---
+
+<Layout
+	title="Programa de Estágio CEJA Brasil | Agente de Integração e Parcerias"
+	description="Programa de estágio CEJA Brasil para contratar estagiário com segurança jurídica, gestão documental completa, agente de integração e parcerias com escolas."
+	keywords="contratar estagiário, programa de estágio, agente de integração, parcerias com escolas, convênio escolar, estágio CEJA Brasil"
+>
+	<section class="relative overflow-hidden bg-white py-20">
+		<div class="pointer-events-none absolute -left-10 top-16 h-24 w-24 rounded-full bg-ceja-yellow/25"></div>
+		<div class="pointer-events-none absolute right-6 top-24 h-20 w-20 rounded-full bg-ceja-blue/20"></div>
+
+		<div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Programa de Estágio CEJA Brasil</p>
+				<h1 class="mt-4 text-4xl font-extrabold leading-tight text-[#0a1d37] sm:text-5xl">
+					Programa de Estágio: A ponte estratégica entre o aprendizado e o mercado
+				</h1>
+				<p class="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
+					Como Agente de Integração, o CEJA Brasil facilita a conexão de estudantes com empresas, garantindo gestão documental completa e segurança jurídica.
+				</p>
+				<a
+					href="#form-parceria"
+					class="mt-8 inline-flex rounded-full bg-ceja-yellow px-7 py-3 text-base font-bold text-black transition hover:brightness-95"
+				>
+					Seja uma Empresa Parceira
+				</a>
+			</div>
+
+			<div class="relative mx-auto w-full max-w-xl">
+				<div class="pointer-events-none absolute -left-5 top-5 h-10 w-28 rounded-full bg-ceja-blue/20"></div>
+				<div class="pointer-events-none absolute -right-6 bottom-12 h-16 w-16 rounded-full bg-ceja-yellow/35"></div>
+				<div class="overflow-hidden rounded-[2.5rem] border-8 border-white shadow-2xl">
+					<Image
+						src={heroEstagio}
+						alt="Estudantes universitários e equipe corporativa em ambiente de estágio"
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-[420px] w-full object-cover"
+					/>
+				</div>
+				<div class="absolute -bottom-8 -left-6 hidden h-36 w-40 overflow-hidden rounded-[1.5rem] border-4 border-white shadow-xl sm:block">
+					<Image
+						src={corporativoEstagio}
+						alt="Jovens profissionais em escritório moderno durante programa de estágio"
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-full w-full object-cover"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-slate-50 py-20">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-3xl text-center">
+				<h2 class="text-3xl font-bold text-ceja-dark sm:text-4xl">Como Funciona</h2>
+				<p class="mt-4 text-slate-600">
+					Processo objetivo para contratar estagiário com segurança, previsibilidade e acompanhamento completo.
+				</p>
+			</div>
+
+			<div class="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+				<article class="rounded-3xl bg-white p-6 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+					<p class="text-sm font-semibold text-ceja-blue">01</p>
+					<h3 class="mt-2 text-xl font-bold text-ceja-dark">Recrutamento e Seleção</h3>
+					<p class="mt-3 text-sm text-slate-600">Triagem e encaminhamento de perfis alinhados à vaga e à cultura da empresa.</p>
+				</article>
+				<article class="rounded-3xl bg-white p-6 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+					<p class="text-sm font-semibold text-ceja-blue">02</p>
+					<h3 class="mt-2 text-xl font-bold text-ceja-dark">Gestão de Contratos</h3>
+					<p class="mt-3 text-sm text-slate-600">Formalização da documentação com controle de prazos e conformidade jurídica.</p>
+				</article>
+				<article class="rounded-3xl bg-white p-6 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+					<p class="text-sm font-semibold text-ceja-blue">03</p>
+					<h3 class="mt-2 text-xl font-bold text-ceja-dark">Acompanhamento do Estudante</h3>
+					<p class="mt-3 text-sm text-slate-600">Suporte pedagógico contínuo para evolução acadêmica e desempenho profissional.</p>
+				</article>
+				<article class="rounded-3xl bg-white p-6 shadow-[0_12px_30px_-18px_rgba(15,23,42,0.35)]">
+					<p class="text-sm font-semibold text-ceja-blue">04</p>
+					<h3 class="mt-2 text-xl font-bold text-ceja-dark">Seguro de Vida e Relatórios</h3>
+					<p class="mt-3 text-sm text-slate-600">Cobertura de seguro e relatórios periódicos para gestão transparente do programa.</p>
+				</article>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-white py-20">
+		<div class="mx-auto grid w-full max-w-7xl gap-6 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<article class="rounded-3xl border-2 border-ceja-blue bg-white p-8">
+				<h2 class="text-2xl font-bold text-ceja-dark">Para Empresas</h2>
+				<ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-700">
+					<li>• Isenção de encargos trabalhistas no programa de estágio.</li>
+					<li>• Oxigenação da equipe com novos talentos e perspectivas.</li>
+					<li>• Formação de talentos internos para futuras efetivações.</li>
+					<li>• Agilidade na contratação com suporte especializado.</li>
+				</ul>
+			</article>
+
+			<article class="rounded-3xl bg-ceja-blue p-8 text-white">
+				<h2 class="text-2xl font-bold">Para Instituições de Ensino</h2>
+				<ul class="mt-5 space-y-3 text-sm leading-relaxed text-slate-100">
+					<li>• Estágios para ensino médio, técnico e superior.</li>
+					<li>• Acompanhamento acadêmico com foco em desenvolvimento.</li>
+					<li>• Convênios simplificados com gestão documental ágil.</li>
+					<li>• Portal de vagas para ampliar oportunidades aos alunos.</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+
+	<section class="bg-slate-50 py-20">
+		<div class="mx-auto grid w-full max-w-7xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Gestão Documental</p>
+				<h2 class="mt-3 text-3xl font-bold text-ceja-dark sm:text-4xl">100% da burocracia sob responsabilidade do CEJA</h2>
+				<p class="mt-5 text-slate-600">
+					Cuidamos de todas as etapas documentais do programa de estágio para proteger sua empresa e dar segurança aos estudantes.
+				</p>
+				<ul class="mt-5 space-y-2 text-sm text-slate-700">
+					<li>• Termo de Compromisso de Estágio (TCE)</li>
+					<li>• Plano de Atividades</li>
+					<li>• Avaliações periódicas e registros acadêmicos</li>
+				</ul>
+			</div>
+			<div class="overflow-hidden rounded-[2rem] border-8 border-white shadow-xl">
+				<Image
+					src={parceriaEscolaConsultor}
+					alt="Aperto de mãos entre diretores de escola e consultores em parceria de estágio"
+					width={1400}
+					height={933}
+					format="webp"
+					quality="mid"
+					class="h-[360px] w-full object-cover"
+				/>
+			</div>
+		</div>
+	</section>
+
+	<section id="form-parceria" class="bg-slate-100 py-20">
+		<div class="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+			<div class="rounded-3xl bg-white p-8 shadow-[0_20px_45px_-24px_rgba(15,23,42,0.45)] sm:p-10">
+				<h2 class="text-3xl font-bold text-ceja-dark">Deseja contratar estagiários ou firmar convênio escolar? Fale conosco</h2>
+				<form class="mt-8 grid gap-4 sm:grid-cols-2" action="#" method="post">
+					<label class="text-sm font-medium text-slate-700">
+						Nome
+						<input type="text" name="nome" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+					</label>
+					<label class="text-sm font-medium text-slate-700">
+						Empresa/Instituição
+						<input type="text" name="empresa" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+					</label>
+					<label class="text-sm font-medium text-slate-700">
+						Cargo
+						<input type="text" name="cargo" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+					</label>
+					<label class="text-sm font-medium text-slate-700">
+						E-mail
+						<input type="email" name="email" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+					</label>
+					<label class="text-sm font-medium text-slate-700 sm:col-span-2">
+						Telefone
+						<input type="tel" name="telefone" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+					</label>
+					<label class="text-sm font-medium text-slate-700 sm:col-span-2">
+						Mensagem
+						<textarea name="mensagem" rows="5" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none"></textarea>
+					</label>
+					<div class="sm:col-span-2">
+						<button type="submit" class="inline-flex rounded-full bg-ceja-yellow px-8 py-3 text-sm font-extrabold uppercase tracking-wide text-black transition hover:brightness-95">
+							Enviar Solicitação
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</section>
+</Layout>
