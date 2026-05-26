@@ -1,0 +1,67 @@
+---
+import dados from '../data/nota-fiscal-paulista.json';
+---
+
+<section id="nota-fiscal-paulista" class="bg-white py-20 sm:py-24" aria-labelledby="nfp-titulo">
+	<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+		<div class="overflow-hidden rounded-[2.5rem] border border-ceja-blue-light bg-gradient-to-br from-ceja-blue-light/40 via-white to-ceja-green-light/30 shadow-sm">
+			<div class="grid gap-10 p-8 sm:p-10 lg:grid-cols-2 lg:items-center lg:p-12">
+				<div>
+					<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-green">Contribua sem custo</p>
+					<h2 id="nfp-titulo" class="mt-3 text-3xl font-black text-ceja-blue-dark sm:text-4xl">
+						{dados.titulo}
+					</h2>
+					<p class="mt-4 text-lg font-semibold leading-snug text-ceja-blue">
+						{dados.subtitulo}
+					</p>
+					<p class="mt-5 text-base leading-relaxed text-ceja-muted">
+						{dados.intro}
+					</p>
+					<div class="mt-6 inline-flex rounded-2xl border border-ceja-blue/20 bg-white px-5 py-3 text-sm text-ceja-blue-dark">
+						<span class="font-semibold">CNPJ CEJA Brasil:</span>
+						<span class="ml-2 font-mono">{dados.cnpj}</span>
+					</div>
+				</div>
+
+				<div class="rounded-[2rem] border border-ceja-blue-light bg-white p-6 sm:p-8">
+					<h3 class="text-lg font-bold text-ceja-blue-dark">Como doar em 4 passos</h3>
+					<ol class="mt-6 space-y-5">
+						{
+							dados.passos.map((passo, index) => (
+								<li class="flex gap-4">
+									<span
+										class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-ceja-header text-sm font-bold text-white"
+										aria-hidden="true"
+									>
+										{index + 1}
+									</span>
+									<div>
+										<p class="font-semibold text-ceja-blue-dark">{passo.titulo}</p>
+										<p class="mt-1 text-sm leading-relaxed text-ceja-muted">{passo.descricao}</p>
+									</div>
+								</li>
+							))
+						}
+					</ol>
+				</div>
+			</div>
+
+			<div class="border-t border-ceja-blue-light bg-ceja-surface/80 px-8 py-8 sm:px-12">
+				<div class="flex flex-col items-start justify-between gap-6 lg:flex-row lg:items-center">
+					<p class="max-w-3xl text-sm leading-relaxed text-ceja-muted sm:text-base">
+						{dados.impacto}
+					</p>
+					<a
+						href={dados.portalUrl}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="inline-flex shrink-0 rounded-full bg-ceja-green px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110"
+						aria-label={`${dados.portalLabel} — abre em nova aba`}
+					>
+						{dados.portalLabel}
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

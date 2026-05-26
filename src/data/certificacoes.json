@@ -1,0 +1,43 @@
+{
+  "titulo": "Reconhecimento e certificações",
+  "subtitulo": "Selos que comprovam nossa atuação responsável, transparente e alinhada às políticas públicas",
+  "intro": "O CEJA Brasil mantém vínculos institucionais e certificações que reforçam nossa credibilidade perante empresas, famílias, poder público e comunidade.",
+  "certificacoes": [
+    {
+      "sigla": "CMDCA",
+      "nome": "Conselho Municipal dos Direitos da Criança e do Adolescente",
+      "descricao": "Representa o vínculo do CEJA com as políticas municipais de proteção integral, garantindo que nossas ações com jovens e adolescentes estejam alinhadas ao Estatuto da Criança e do Adolescente (ECA) e ao controle social da comunidade.",
+      "destaque": "Proteção integral e participação social"
+    },
+    {
+      "sigla": "COMAS",
+      "nome": "Conselho Municipal de Assistência Social",
+      "descricao": "Atesta nossa integração ao Sistema Único de Assistência Social (SUAS), validando projetos sociais, equipamentos comunitários e ações de impacto voltadas a famílias e territórios em situação de vulnerabilidade.",
+      "destaque": "Assistência social e SUAS"
+    },
+    {
+      "sigla": "CEBAS",
+      "nome": "Certificado de Entidade Beneficente de Assistência Social",
+      "descricao": "Certificação federal que reconhece o CEJA como entidade de assistência social de utilidade pública. Reforça transparência na gestão, seriedade institucional e compromisso com o desenvolvimento social.",
+      "destaque": "Utilidade pública e transparência"
+    },
+    {
+      "sigla": "Conselho do Idoso",
+      "nome": "Conselho Municipal do Idoso",
+      "descricao": "Demonstra nosso compromisso com a inclusão intergeracional e com os direitos da pessoa idosa, ampliando o diálogo com políticas públicas e ações que valorizam a diversidade etária no mundo do trabalho.",
+      "destaque": "Direitos da pessoa idosa"
+    },
+    {
+      "sigla": "Entidade Qualificadora",
+      "nome": "Reconhecimento na Lei da Aprendizagem",
+      "descricao": "Autoriza o CEJA a estruturar e executar programas de Jovem Aprendiz com formação técnica, acompanhamento pedagógico e conformidade legal — diferencial decisivo para empresas parceiras.",
+      "destaque": "Jovem Aprendiz com segurança jurídica"
+    },
+    {
+      "sigla": "Agente de Integração",
+      "nome": "Programa de Estágio supervisionado",
+      "descricao": "Habilita o CEJA a intermediar estágios entre estudantes e empresas, com gestão documental, acompanhamento e segurança jurídica em todo o ciclo do programa.",
+      "destaque": "Estágio com gestão completa"
+    }
+  ]
+}

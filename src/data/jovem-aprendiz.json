@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "titulo": "Programa Jovem Aprendiz",
+    "subtitulo": "Captação, seleção, contratação e acompanhamento pedagógico com total conformidade à Lei da Aprendizagem e foco no desenvolvimento de jovens talentos.",
+    "ctaEmpresa": "Quero contratar aprendizes",
+    "ctaJovem": "Cadastrar meu currículo"
+  },
+  "etapas": [
+    {
+      "titulo": "Captação",
+      "descricao": "Divulgação ativa, orientação vocacional e acolhimento de jovens entre 14 e 24 anos alinhados ao perfil das vagas."
+    },
+    {
+      "titulo": "Seleção",
+      "descricao": "Triagem técnica e comportamental com entrevistas, testes e validação de documentação escolar e residência."
+    },
+    {
+      "titulo": "Contratação",
+      "descricao": "Formalização de contratos, registro e integração do aprendiz com segurança jurídica e prazos legais cumpridos."
+    },
+    {
+      "titulo": "Acompanhamento pedagógico",
+      "descricao": "Monitoramento mensal da formação teórica e prática, com relatórios e suporte contínuo à empresa e ao jovem."
+    }
+  ],
+  "beneficiosEmpresa": [
+    "Redução de encargos trabalhistas prevista na Lei da Aprendizagem",
+    "Formação de talentos alinhados à cultura e às necessidades do negócio",
+    "Cumprimento de cotas com gestão documental completa pelo CEJA",
+    "Impacto social com marca empregadora fortalecida"
+  ],
+  "beneficiosJovem": [
+    "Primeira experiência profissional com suporte pedagógico",
+    "Formação técnica em arcos ocupacionais reconhecidos",
+    "Desenvolvimento de soft skills para o mercado de trabalho",
+    "Acompanhamento próximo durante todo o contrato"
+  ],
+  "diferencial": {
+    "titulo": "CEJA Brasil: Entidade Qualificadora",
+    "descricao": "Atuamos com autoridade técnica na estruturação do programa de aprendizagem, garantindo conformidade legal, trilhas formativas e governança para empresas e jovens."
+  }
+}

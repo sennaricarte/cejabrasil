@@ -28,11 +28,11 @@ const {
 		<meta name="description" content={description} />
 		<meta name="keywords" content={keywords} />
 	</head>
-	<body class="bg-slate-50 font-sans text-slate-900 antialiased">
+	<body class="bg-ceja-surface font-sans text-ceja-blue-dark antialiased">
 		<header class="fixed inset-x-0 top-0 z-50 shadow-sm">
-			<div class="border-b border-slate-200" style="background-color: #f8f9fa;">
+			<div class="border-b border-ceja-blue-light bg-ceja-blue-light/60">
 				<div
-					class="mx-auto flex h-9 w-full max-w-7xl items-center justify-between px-4 text-xs text-slate-700 sm:px-6 lg:px-8"
+					class="mx-auto flex h-9 w-full max-w-7xl items-center justify-between px-4 text-xs text-ceja-muted sm:px-6 lg:px-8"
 				>
 					<div class="flex items-center gap-3" aria-label="Redes sociais CEJA Brasil">
 						<a href="#" aria-label="Facebook CEJA Brasil" class="transition-colors hover:text-ceja-blue">
@@ -58,7 +58,7 @@ const {
 				</div>
 			</div>
 
-			<div class="bg-black">
+			<div class="border-b border-ceja-blue-dark/15 bg-ceja-header">
 				<div class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
 				<a href="/" aria-label="Página inicial CEJA Brasil">
 					<Image
@@ -66,28 +66,26 @@ const {
 						alt="Logo CEJA Brasil com globo azul e mapa do Brasil em amarelo"
 						width={1024}
 						height={369}
-						format="webp"
-						quality="mid"
 						class="h-auto w-52 object-contain sm:w-60"
 					/>
 				</a>
 
 				<nav aria-label="Navegação principal">
 					<ul class="flex items-center gap-4 text-base font-medium text-white sm:gap-6">
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-blue after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-blue after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/">Jovem Aprendiz</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-blue after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-blue after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/estagio">Estágio</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-blue after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-blue after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/pcd">PCD</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-blue after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-blue after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/cursos">Cursos</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-blue after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-blue after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/empresas">Empresas</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-blue after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-blue after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/vagas">Vagas</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-blue after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-blue after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/contato">Contato</a></li>
+						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-orange after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-orange after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/jovem-aprendiz">Jovem Aprendiz</a></li>
+						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-orange after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-orange after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/estagio">Estágio</a></li>
+						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-orange after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-orange after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/pcd">PCD</a></li>
+						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-orange after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-orange after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/cursos">Cursos</a></li>
+						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-orange after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-orange after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/empresas">Empresas</a></li>
+						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-orange after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-orange after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/vagas">Vagas</a></li>
+						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-orange after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-orange after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/contato">Contato</a></li>
 					</ul>
 				</nav>
 
 				<a
 					href="/pcd"
 					aria-label="Inclusão para o Mundo do Trabalho"
-					class="inline-flex items-center rounded-full bg-ceja-yellow px-5 py-3 text-sm font-bold text-black shadow-sm transition-transform duration-300 hover:-translate-y-0.5"
+					class="inline-flex items-center rounded-full bg-ceja-orange px-5 py-3 text-sm font-bold text-white shadow-sm transition-transform duration-300 hover:-translate-y-0.5 hover:brightness-105"
 				>
 					Inclusão para o Mundo do Trabalho
 				</a>
@@ -102,7 +100,7 @@ const {
 		<a
 			href="#contato-pcd"
 			aria-label="Abrir recursos de acessibilidade e contato especializado"
-			class="fixed bottom-5 left-5 z-[60] inline-flex items-center gap-2 rounded-full border-2 border-[#FDCB08] bg-[#0a1d37] px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:bg-[#FDCB08] hover:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#0a1d37]"
+			class="fixed bottom-5 left-5 z-[60] inline-flex items-center gap-2 rounded-full border-2 border-ceja-green bg-ceja-blue-dark px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:border-ceja-green hover:bg-ceja-green focus:outline-none focus-visible:ring-2 focus-visible:ring-ceja-blue-light focus-visible:ring-offset-2 focus-visible:ring-offset-ceja-blue-dark"
 		>
 			<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
 				<path d="M12 2.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM8.25 9A2.25 2.25 0 0 0 6 11.25v2.5a.75.75 0 0 0 1.5 0v-2.5a.75.75 0 0 1 .75-.75h.257a3.74 3.74 0 0 1 2.552 1.005l.41.384a.75.75 0 0 0 1.026 0l.41-.384a3.74 3.74 0 0 1 2.552-1.005h.257a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 0 1.5 0v-2.5A2.25 2.25 0 0 0 15.75 9h-1.69a5.22 5.22 0 0 0-2.06.425A5.22 5.22 0 0 0 9.94 9H8.25ZM12 14.25a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75Z" />
@@ -110,44 +108,44 @@ const {
 			<span>Acessibilidade</span>
 		</a>
 
-		<footer class="relative mt-20 overflow-hidden bg-[#0a1d37] text-white">
+		<footer class="relative mt-20 overflow-hidden bg-ceja-blue-dark text-white">
 			<div class="pointer-events-none absolute inset-x-0 -top-16 h-24 rounded-b-[50%] bg-white sm:-top-20 sm:h-28"></div>
 
 			<div class="relative mx-auto w-full max-w-7xl px-4 pb-0 pt-20 sm:px-6 lg:px-8">
 				<div class="grid gap-10 pb-10 md:grid-cols-2 xl:grid-cols-4">
 					<div>
 						<a href="#" aria-label="Página inicial CEJA Brasil" class="text-2xl font-extrabold tracking-tight text-white">
-							CEJA <span class="text-[#FDCB08]">BRASIL</span>
+							CEJA <span class="text-ceja-orange">BRASIL</span>
 						</a>
-						<p class="mt-4 max-w-sm text-sm leading-relaxed text-slate-200">
+						<p class="mt-4 max-w-sm text-sm leading-relaxed text-ceja-blue-light">
 							ONG especializada na formação e inclusão de jovens e PCDs no mercado de trabalho. Transformando vidas através da educação e oportunidade.
 						</p>
 						<div class="mt-6 flex items-center gap-3" aria-label="Redes sociais CEJA Brasil">
-							<a href="#" aria-label="Instagram CEJA Brasil" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#FDCB08] hover:text-black">
+							<a href="#" aria-label="Instagram CEJA Brasil" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-ceja-orange hover:text-white">
 								<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25h-8.5Zm8.75 1.75a1 1 0 1 1 0 2 1 1 0 0 1 0-2ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7Z" /></svg>
 							</a>
-							<a href="#" aria-label="LinkedIn CEJA Brasil" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#FDCB08] hover:text-black">
+							<a href="#" aria-label="LinkedIn CEJA Brasil" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-ceja-orange hover:text-white">
 								<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M6.5 8a1.75 1.75 0 1 1 0-3.5A1.75 1.75 0 0 1 6.5 8ZM5 9.5h3v9H5v-9Zm5 0h2.9v1.3h.04c.4-.76 1.4-1.55 2.86-1.55 3.06 0 3.62 2.01 3.62 4.63v4.62h-3v-4.1c0-.98-.02-2.23-1.36-2.23-1.36 0-1.56 1.06-1.56 2.16v4.17h-3v-9Z" /></svg>
 							</a>
-							<a href="#" aria-label="Facebook CEJA Brasil" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-[#FDCB08] hover:text-black">
+							<a href="#" aria-label="Facebook CEJA Brasil" class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-ceja-orange hover:text-white">
 								<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M13.5 9H16V6h-2.5A4.5 4.5 0 0 0 9 10.5V13H6v3h3v6h3v-6h3l1-3h-4v-2.5A1.5 1.5 0 0 1 13.5 9Z" /></svg>
 							</a>
 						</div>
 					</div>
 
 					<div>
-						<h3 class="text-lg font-bold text-[#FDCB08]">Soluções</h3>
-						<ul class="mt-4 space-y-2 text-sm text-slate-200">
-							<li><a href="#" class="transition hover:text-[#FDCB08]">Jovem Aprendiz para empresas</a></li>
-							<li><a href="#" class="transition hover:text-[#FDCB08]">Programa de Estágio supervisionado</a></li>
-							<li><a href="#" class="transition hover:text-[#FDCB08]">Inclusão PCD no mercado de trabalho</a></li>
-							<li><a href="#" class="transition hover:text-[#FDCB08]">Cursos de formação profissional</a></li>
+						<h3 class="text-lg font-bold text-ceja-orange">Soluções</h3>
+						<ul class="mt-4 space-y-2 text-sm text-ceja-blue-light">
+							<li><a href="/jovem-aprendiz" class="transition hover:text-ceja-orange">Jovem Aprendiz para empresas</a></li>
+							<li><a href="#" class="transition hover:text-ceja-orange">Programa de Estágio supervisionado</a></li>
+							<li><a href="#" class="transition hover:text-ceja-green">Inclusão PCD no mercado de trabalho</a></li>
+							<li><a href="#" class="transition hover:text-ceja-orange">Cursos de formação profissional</a></li>
 						</ul>
 					</div>
 
 					<div>
-						<h3 class="text-lg font-bold text-[#FDCB08]">Fale Conosco</h3>
-						<ul class="mt-4 space-y-3 text-sm leading-relaxed text-slate-200">
+						<h3 class="text-lg font-bold text-ceja-orange">Fale Conosco</h3>
+						<ul class="mt-4 space-y-3 text-sm leading-relaxed text-ceja-blue-light">
 							<li><span class="font-semibold text-white">Matriz (Administrativo):</span> atendimento@cejabrasil.org.br</li>
 							<li><span class="font-semibold text-white">WhatsApp Matriz:</span> (11) 94595-7746 (Somente mensagens)</li>
 							<li><span class="font-semibold text-white">Unidade Centro - SP:</span> Rua Conselheiro Crispiniano, 105 - 3º Andar - Sala 32, Centro, São Paulo - SP</li>
@@ -156,13 +154,13 @@ const {
 					</div>
 
 					<div>
-						<h3 class="text-lg font-bold text-[#FDCB08]">Parcerias</h3>
-						<p class="mt-4 text-sm leading-relaxed text-slate-200">
+						<h3 class="text-lg font-bold text-ceja-orange">Parcerias</h3>
+						<p class="mt-4 text-sm leading-relaxed text-ceja-blue-light">
 							Sua empresa pode contratar com segurança jurídica e gerar impacto social real com o CEJA Brasil.
 						</p>
 						<a
 							href="#"
-							class="mt-6 inline-flex rounded-full bg-[#FDCB08] px-6 py-3 text-xs font-extrabold uppercase tracking-wide text-black transition hover:brightness-95"
+							class="mt-6 inline-flex rounded-full bg-ceja-orange px-6 py-3 text-xs font-extrabold uppercase tracking-wide text-white transition hover:brightness-105"
 						>
 							SOLICITAR PROPOSTA
 						</a>
@@ -170,7 +168,7 @@ const {
 				</div>
 			</div>
 
-			<div class="bg-[#071328] px-4 py-4 text-center text-xs leading-relaxed text-slate-300 sm:px-6 lg:px-8">
+			<div class="bg-ceja-blue-dark/90 px-4 py-4 text-center text-xs leading-relaxed text-ceja-blue-light sm:px-6 lg:px-8">
 				© 2026 CEJA Brasil - CNPJ: 15.409.309/0001-07. Entidade Qualificadora no Programa de Aprendizagem e Agente de Integração de Estágio. Todos os direitos reservados.
 			</div>
 		</footer>

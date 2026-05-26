@@ -1,0 +1,73 @@
+{
+  "fonte": "Unsplash e Pexels — uso gratuito sob licenças oficiais de cada plataforma",
+  "criterios": [
+    "Jovens e adolescentes",
+    "Diversidade",
+    "Inclusão e PCD",
+    "Ambiente educacional e profissional",
+    "Tom leve, suave e acolhedor",
+    "Equipamentos sociais e comunitários"
+  ],
+  "imagens": [
+    {
+      "arquivo": "estagio/hero-estagio.jpg",
+      "plataforma": "Unsplash",
+      "tema": "Jovens diversos em ambiente colaborativo",
+      "url": "https://unsplash.com/photos/1522202176988"
+    },
+    {
+      "arquivo": "estagio/parceria-escola-consultor.jpg",
+      "plataforma": "Pexels",
+      "tema": "Reunião acolhedora entre profissionais",
+      "url": "https://www.pexels.com/photo/3184292/"
+    },
+    {
+      "arquivo": "estagio/corporativo-estagio.jpg",
+      "plataforma": "Unsplash",
+      "tema": "Ambiente corporativo colaborativo",
+      "url": "https://unsplash.com/photos/1553877522"
+    },
+    {
+      "arquivo": "pcd/hero-pcd.jpg",
+      "plataforma": "Pexels",
+      "tema": "Inclusão de PCD no ambiente de trabalho",
+      "url": "https://www.pexels.com/photo/5686105/"
+    },
+    {
+      "arquivo": "pcd/metodologia-pcd.jpg",
+      "plataforma": "Pexels",
+      "tema": "Equipe diversa em contexto profissional",
+      "url": "https://www.pexels.com/photo/7640446/"
+    },
+    {
+      "arquivo": "pcd/depoimento-rh.jpg",
+      "plataforma": "Unsplash",
+      "tema": "Diálogo profissional acolhedor",
+      "url": "https://unsplash.com/photos/1600880292203"
+    },
+    {
+      "arquivo": "vagas/hero-vagas.jpg",
+      "plataforma": "Unsplash",
+      "tema": "Jovens em contexto profissional",
+      "url": "https://unsplash.com/photos/1529156069898"
+    },
+    {
+      "arquivo": "vagas/card-vagas.jpg",
+      "plataforma": "Pexels",
+      "tema": "Jovem em ambiente educacional",
+      "url": "https://www.pexels.com/photo/8199568/"
+    },
+    {
+      "arquivo": "sociais/equipamentos-sociais.jpg",
+      "plataforma": "Pexels",
+      "tema": "Ação social e equipamentos comunitários",
+      "url": "https://www.pexels.com/photo/6646918/"
+    },
+    {
+      "arquivo": "sociais/formacao-comunitaria.jpg",
+      "plataforma": "Pexels",
+      "tema": "Formação em grupo — impacto educacional",
+      "url": "https://www.pexels.com/photo/8613312/"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+﻿import React, { useMemo, useState } from 'react';
 import { EditorContent, useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import { Table } from '@tiptap/extension-table';
@@ -61,7 +61,7 @@ function cleanPastedHtml(html: string): string {
 }
 
 const buttonBase =
-  'inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-slate-700 transition hover:border-[#0a1d37] hover:text-[#0a1d37] disabled:cursor-not-allowed disabled:opacity-40';
+  'inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-2 text-ceja-muted transition hover:border-ceja-blue-dark hover:text-ceja-blue-dark disabled:cursor-not-allowed disabled:opacity-40';
 
 export default function ArticleEditorDashboard() {
   const [isFocused, setIsFocused] = useState(false);
@@ -105,7 +105,7 @@ export default function ArticleEditorDashboard() {
     editorProps: {
       attributes: {
         class:
-          'prose prose-slate max-w-none min-h-[560px] px-8 py-6 font-sans outline-none prose-headings:font-extrabold prose-headings:text-[#0a1d37] prose-p:text-slate-700 prose-table:my-5 prose-table:w-full prose-table:border-collapse prose-th:border prose-th:border-slate-300 prose-th:bg-slate-50 prose-th:px-3 prose-th:py-2 prose-td:border prose-td:border-slate-300 prose-td:px-3 prose-td:py-2',
+          'prose prose-slate max-w-none min-h-[560px] px-8 py-6 font-sans outline-none prose-headings:font-extrabold prose-headings:text-ceja-blue-dark prose-p:text-ceja-muted prose-table:my-5 prose-table:w-full prose-table:border-collapse prose-th:border prose-th:border-slate-300 prose-th:bg-ceja-surface prose-th:px-3 prose-th:py-2 prose-td:border prose-td:border-slate-300 prose-td:px-3 prose-td:py-2',
       },
       transformPastedHTML: (html) => cleanPastedHtml(html),
     },
@@ -119,7 +119,7 @@ export default function ArticleEditorDashboard() {
   );
 
   const getButtonClass = (isActive: boolean) =>
-    `${buttonBase} ${isActive ? 'border-[#0a1d37] bg-[#0a1d37]/10 text-[#0a1d37]' : ''}`;
+    `${buttonBase} ${isActive ? 'border-ceja-blue-dark bg-ceja-blue-dark/10 text-ceja-blue-dark' : ''}`;
 
   const handleSetLink = () => {
     const previousUrl = editor.getAttributes('link').href as string | undefined;
@@ -186,17 +186,17 @@ export default function ArticleEditorDashboard() {
               }}
               placeholder="Título do Artigo"
               aria-label="Título do Artigo"
-              className="w-full border-none bg-transparent px-0 text-4xl font-black tracking-tight text-[#0a1d37] placeholder:text-slate-300 focus:outline-none"
+              className="w-full border-none bg-transparent px-0 text-4xl font-black tracking-tight text-ceja-blue-dark placeholder:text-ceja-blue-light focus:outline-none"
             />
 
-            <label className="mt-4 block text-sm font-medium text-slate-700">
+            <label className="mt-4 block text-sm font-medium text-ceja-muted">
               Slug
               <input
                 type="text"
                 value={slug}
                 onChange={(event) => setSlug(event.target.value)}
                 placeholder="url-amigavel-do-artigo"
-                className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-2 focus:border-[#0a1d37] focus:outline-none"
+                className="mt-2 w-full rounded-xl border border-slate-300 px-4 py-2 focus:border-ceja-blue-dark focus:outline-none"
               />
             </label>
             <div className="sticky top-4 z-20 mt-5 rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
@@ -284,7 +284,7 @@ export default function ArticleEditorDashboard() {
 
             <div
               className={`mt-4 rounded-2xl border bg-white shadow-sm transition ${
-                isFocused ? 'border-[#0a1d37]' : 'border-slate-300'
+                isFocused ? 'border-ceja-blue-dark' : 'border-slate-300'
               }`}
             >
               <EditorContent editor={editor} />
@@ -293,14 +293,14 @@ export default function ArticleEditorDashboard() {
         </section>
 
         <aside className="h-fit rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
-          <h2 className="text-lg font-bold text-[#0a1d37]">Configurações do Artigo</h2>
+          <h2 className="text-lg font-bold text-ceja-blue-dark">Configurações do Artigo</h2>
 
-          <label className="mt-4 block text-sm font-medium text-slate-700">
+          <label className="mt-4 block text-sm font-medium text-ceja-muted">
             Categoria
             <select
               value={selectedCategory}
               onChange={(event) => setSelectedCategory(event.target.value)}
-              className="mt-2 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:border-[#0a1d37] focus:outline-none"
+              className="mt-2 w-full rounded-xl border border-slate-300 px-3 py-2 text-sm focus:border-ceja-blue-dark focus:outline-none"
             >
               {categories.map((category) => (
                 <option key={category}>{category}</option>
@@ -312,7 +312,7 @@ export default function ArticleEditorDashboard() {
             type="button"
             onClick={handlePublish}
             disabled={isPublishing}
-            className="mt-6 inline-flex w-full justify-center rounded-full bg-[#0a1d37] px-5 py-3 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
+            className="mt-6 inline-flex w-full justify-center rounded-full bg-ceja-blue-dark px-5 py-3 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110 disabled:cursor-not-allowed disabled:opacity-60"
           >
             {isPublishing ? 'Publicando...' : 'Publicar Artigo'}
           </button>

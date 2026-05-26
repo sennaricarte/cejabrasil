@@ -1,0 +1,27 @@
+{
+  "titulo": "Nota Fiscal Paulista",
+  "subtitulo": "Contribua com os projetos sociais do CEJA Brasil sem pagar nada a mais",
+  "intro": "O programa Nota Fiscal Paulista permite que moradores do Estado de São Paulo destinem créditos acumulados às entidades sociais cadastradas. Ao escolher o CEJA Brasil, você transforma suas compras do dia a dia em apoio direto à formação de jovens, inclusão de PCDs e ações comunitárias.",
+  "cnpj": "15.409.309/0001-07",
+  "passos": [
+    {
+      "titulo": "Cadastre seu CPF",
+      "descricao": "Acesse o portal oficial da Nota Fiscal Paulista e faça seu cadastro gratuito com CPF e senha."
+    },
+    {
+      "titulo": "Informe o CPF na compra",
+      "descricao": "Sempre que realizar compras em estabelecimentos paulistas, informe seu CPF para que a nota fiscal entre no programa."
+    },
+    {
+      "titulo": "Acumule créditos",
+      "descricao": "Parte dos valores sorteados pelo programa pode ser convertida em créditos disponíveis para resgate ou doação."
+    },
+    {
+      "titulo": "Doe ao CEJA Brasil",
+      "descricao": "No portal, escolha doar seus créditos ao CEJA Brasil (CNPJ 15.409.309/0001-07) e fortaleça nossos equipamentos sociais e educacionais."
+    }
+  ],
+  "impacto": "Sua contribuição financia projetos de aprendizagem, inclusão produtiva, capacitação profissional e ações sociais que transformam vidas — com total transparência e rastreabilidade institucional.",
+  "portalUrl": "https://www.nfp.fazenda.sp.gov.br/",
+  "portalLabel": "Acessar portal da Nota Fiscal Paulista"
+}

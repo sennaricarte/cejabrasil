@@ -1,0 +1,31 @@
+{
+  "titulo": "Serviços em destaque",
+  "subtitulo": "Soluções completas para empresas, jovens e comunidade",
+  "intro": "O CEJA Brasil atua com excelência técnica e impacto social em programas que conectam talento, inclusão e formação profissional.",
+  "servicos": [
+    {
+      "titulo": "Programa Jovem Aprendiz",
+      "descricao": "Captação, seleção, contratação e acompanhamento pedagógico com total conformidade à Lei da Aprendizagem e foco no desenvolvimento de jovens talentos.",
+      "href": "/jovem-aprendiz",
+      "cta": "Conhecer o programa",
+      "imageKey": "aprendiz",
+      "badge": "Lei da Aprendizagem"
+    },
+    {
+      "titulo": "Inclusão de Pessoas com Deficiência (PCD)",
+      "descricao": "Consultoria especializada em cotas, recrutamento inclusivo, acessibilidade corporativa e integração produtiva com suporte técnico contínuo.",
+      "href": "/pcd",
+      "cta": "Inclusão para o trabalho",
+      "imageKey": "pcd",
+      "badge": "Lei de Cotas"
+    },
+    {
+      "titulo": "Serviços sociais e educacionais",
+      "descricao": "Equipamentos sociais, projetos comunitários e formação profissional em arcos ocupacionais que fortalecem famílias, territórios e a empregabilidade de jovens.",
+      "href": "/cursos",
+      "cta": "Ver formações",
+      "imageKey": "educacao",
+      "badge": "Impacto social"
+    }
+  ]
+}

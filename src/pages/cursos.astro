@@ -42,21 +42,21 @@ const categoryFilters = ['Todos', 'Administrativo', 'Tecnologia', 'Serviços', '
 >
 	<section class="relative overflow-hidden bg-white py-20">
 		<div class="pointer-events-none absolute -left-10 top-16 h-24 w-24 rounded-full bg-ceja-blue/15"></div>
-		<div class="pointer-events-none absolute right-8 top-20 h-20 w-20 rounded-[45%_55%_50%_50%] bg-[#FDCB08]/40"></div>
+		<div class="pointer-events-none absolute right-8 top-20 h-20 w-20 rounded-[45%_55%_50%_50%] bg-ceja-orange/40"></div>
 		<div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
 			<div>
 				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Cursos CEJA Brasil</p>
-				<h1 class="mt-4 text-4xl font-black leading-tight text-[#0a1d37] sm:text-5xl lg:text-6xl">
+				<h1 class="mt-4 text-4xl font-black leading-tight text-ceja-blue-dark sm:text-5xl lg:text-6xl">
 					Qualificação Profissional que transforma o futuro
 				</h1>
-				<p class="mt-6 max-w-2xl text-lg leading-relaxed text-gray-600">
+				<p class="mt-6 max-w-2xl text-lg leading-relaxed text-ceja-muted">
 					Nossos cursos são estruturados em Arcos Ocupacionais, unindo teoria técnica e prática comportamental para preparar jovens de alto desempenho.
 				</p>
 			</div>
 
 			<div class="relative mx-auto w-full max-w-2xl">
 				<div class="pointer-events-none absolute -left-6 top-6 h-14 w-24 rounded-[60%_40%_45%_55%] bg-ceja-blue/20"></div>
-				<div class="pointer-events-none absolute right-3 -bottom-3 h-16 w-28 rounded-[35%_65%_50%_50%] bg-[#FDCB08]/45"></div>
+				<div class="pointer-events-none absolute right-3 -bottom-3 h-16 w-28 rounded-[35%_65%_50%_50%] bg-ceja-orange/45"></div>
 				<div class="overflow-hidden rounded-[2.8rem] border-8 border-white bg-white shadow-[0_30px_60px_-28px_rgba(10,29,55,0.45)]">
 					<Image
 						src={heroEstagio}
@@ -72,7 +72,7 @@ const categoryFilters = ['Todos', 'Administrativo', 'Tecnologia', 'Serviços', '
 		</div>
 	</section>
 
-	<section class="bg-slate-50 py-20">
+	<section class="bg-ceja-surface py-20">
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="flex flex-wrap items-center gap-3">
 				{
@@ -82,8 +82,8 @@ const categoryFilters = ['Todos', 'Administrativo', 'Tecnologia', 'Serviços', '
 							class:list={[
 								'rounded-full border px-5 py-2 text-sm font-semibold transition',
 								index === 0
-									? 'border-[#0a1d37] bg-[#0a1d37] text-white'
-									: 'border-gray-200 bg-white text-[#0a1d37] hover:border-[#0a1d37]',
+									? 'border-ceja-blue-dark bg-ceja-blue-dark text-white'
+									: 'border-ceja-blue-light bg-white text-ceja-blue-dark hover:border-ceja-blue-dark',
 							]}
 							aria-label={`Filtrar cursos por ${filter}`}
 						>
@@ -110,10 +110,10 @@ const categoryFilters = ['Todos', 'Administrativo', 'Tecnologia', 'Serviços', '
 
 	<section class="bg-white py-20">
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
-			<div class="rounded-[2rem] border border-gray-100 bg-slate-50 p-8 shadow-sm sm:p-10">
+			<div class="rounded-[2rem] border border-ceja-blue-light bg-ceja-surface p-8 shadow-sm sm:p-10">
 				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Diferencial CEJA</p>
-				<h2 class="mt-3 text-3xl font-black text-[#0a1d37] sm:text-4xl">Metodologia completa para evolução real</h2>
-				<p class="mt-5 max-w-4xl text-base leading-relaxed text-gray-600">
+				<h2 class="mt-3 text-3xl font-black text-ceja-blue-dark sm:text-4xl">Metodologia completa para evolução real</h2>
+				<p class="mt-5 max-w-4xl text-base leading-relaxed text-ceja-muted">
 					Capacitação Teórica + Acompanhamento Psicossocial + Desenvolvimento de Soft Skills.
 					Esse modelo combina domínio técnico, maturidade comportamental e suporte contínuo para ampliar a empregabilidade e o desempenho dos jovens nas empresas.
 				</p>
@@ -123,12 +123,12 @@ const categoryFilters = ['Todos', 'Administrativo', 'Tecnologia', 'Serviços', '
 
 	<section class="bg-[#eaf1ff] py-16">
 		<div class="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
-			<p class="max-w-4xl text-lg font-semibold leading-relaxed text-[#0a1d37]">
+			<p class="max-w-4xl text-lg font-semibold leading-relaxed text-ceja-blue-dark">
 				Quer ser um Jovem Aprendiz? Cadastre seu currículo no nosso banco de talentos e aguarde uma oportunidade.
 			</p>
 			<a
 				href="/vagas"
-				class="inline-flex rounded-full bg-[#0a1d37] px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110"
+				class="inline-flex rounded-full bg-ceja-blue-dark px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110"
 			>
 				CADASTRAR MEU CURRÍCULO
 			</a>

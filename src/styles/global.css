@@ -2,9 +2,25 @@
 @import "tailwindcss";
 
 @theme {
-	--color-ceja-yellow: #FDCB08;
-	--color-ceja-blue: #0081C9;
-	--color-ceja-dark: #1a1a1a;
+	/* Azul institucional — confiança e credibilidade */
+	--color-ceja-blue: #2a7ab8;
+	--color-ceja-blue-light: #e3f2fa;
+	--color-ceja-blue-dark: #0f4a6e;
+	--color-ceja-header: #1a7093;
+
+	/* Laranja — destaques e CTAs */
+	--color-ceja-orange: #e86b2a;
+	--color-ceja-yellow: #e86b2a;
+
+	/* Verde — inclusão e sustentabilidade */
+	--color-ceja-green: #3a9b72;
+	--color-ceja-green-light: #e8f6ef;
+
+	/* Superfícies e texto (evita cinza frio) */
+	--color-ceja-surface: #f5f9fc;
+	--color-ceja-muted: #4d6578;
+	--color-ceja-dark: #0f4a6e;
+
 	--font-sans: 'Lexend', 'Inter', system-ui, -apple-system, sans-serif;
 	--font-rounded: 'Lexend', 'Inter', system-ui, -apple-system, sans-serif;
 	--radius-extra-rounded: 2rem;
