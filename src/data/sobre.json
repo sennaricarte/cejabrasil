@@ -1,0 +1,102 @@
+{
+  "hero": {
+    "titulo": "Conheça o CEJA Brasil",
+    "subtitulo": "Organização da sociedade civil sem fins lucrativos que atua há décadas na promoção da inclusão social, educacional e profissional."
+  },
+  "paragrafos": [
+    "O CEJA Brasil é uma organização da sociedade civil sem fins lucrativos que atua há décadas na promoção da inclusão social, educacional e profissional de adolescentes, jovens e famílias.",
+    "Com atuação na Zona Leste, Centro e demais territórios da cidade de São Paulo, desenvolvemos projetos voltados à qualificação profissional, inclusão digital, fortalecimento comunitário, garantia de direitos e preparação para o mercado de trabalho.",
+    "Nossa missão é transformar vidas por meio da educação, do desenvolvimento humano e da geração de oportunidades, contribuindo para a construção de uma sociedade mais justa, inclusiva e sustentável.",
+    "Além do Programa Jovem Aprendiz, o CEJA Brasil executa diversos projetos sociais voltados à proteção social, ao fortalecimento de vínculos familiares e comunitários e ao desenvolvimento de competências para a vida e para o trabalho."
+  ],
+  "nossaHistoria": {
+    "titulo": "Nossa História",
+    "descricao": "Conheça a trajetória do CEJA Brasil, sua missão, valores e o impacto gerado na formação de jovens, famílias e comunidades ao longo dos anos.",
+    "valores": [
+      "Compromisso com a inclusão social e educacional",
+      "Ética, transparência e responsabilidade institucional",
+      "Articulação com empresas, escolas e poder público",
+      "Desenvolvimento humano integral e formação continuada"
+    ]
+  },
+  "sasfGrajau": {
+    "titulo": "SASF Grajaú",
+    "descricao": "Entre os serviços executados destaca-se o Serviço de Assistência Social à Família e Proteção Social Básica no Domicílio (SASF Grajaú), que realiza acompanhamento sistemático de aproximadamente mil famílias, oferecendo suporte socioassistencial, orientações, encaminhamentos, fortalecimento de vínculos familiares e acesso à rede de proteção social."
+  },
+  "experiencia": {
+    "titulo": "Nossa Experiência e Credibilidade",
+    "paragrafos": [
+      "Nossa trajetória é marcada pelo compromisso com a qualidade, transparência e impacto social, sendo reconhecida por importantes certificações, registros e habilitações que asseguram a excelência dos serviços prestados à população.",
+      "O CEJA Brasil atua em conformidade com as legislações vigentes e mantém regularidade junto aos principais órgãos de controle e certificação da área social."
+    ]
+  },
+  "secoesTematicas": [
+    {
+      "titulo": "Atividades Complementares",
+      "descricao": "Passeios culturais, visitas técnicas, ações educativas, oficinas, palestras e experiências formativas que ampliam o repertório cultural e profissional dos participantes.",
+      "icone": "atividades"
+    },
+    {
+      "titulo": "Tecnologia e Inclusão Digital",
+      "descricao": "Utilização de plataformas educacionais, recursos digitais e ambiente virtual Moodle para desenvolvimento de competências tecnológicas e preparação para o mercado de trabalho.",
+      "icone": "tecnologia"
+    },
+    {
+      "titulo": "Programa Jovem Aprendiz",
+      "descricao": "Captação, seleção, contratação, formação e acompanhamento pedagógico com total conformidade à Lei da Aprendizagem e foco no desenvolvimento de jovens talentos.",
+      "icone": "aprendiz",
+      "link": "/jovem-aprendiz",
+      "linkLabel": "Conhecer o programa"
+    }
+  ],
+  "depoimentos": [
+    {
+      "texto": "O CEJA Brasil foi fundamental na minha primeira oportunidade profissional. Recebi apoio pedagógico, orientação e confiança para crescer no mercado de trabalho.",
+      "autor": "Jovem aprendiz",
+      "contexto": "Programa de Aprendizagem"
+    },
+    {
+      "texto": "A parceria com o CEJA nos trouxe segurança jurídica, agilidade no recrutamento e jovens muito bem preparados para integrar nossa equipe.",
+      "autor": "Gestora de RH",
+      "contexto": "Empresa parceira"
+    },
+    {
+      "texto": "O acompanhamento socioassistencial fortaleceu nossa família e abriu caminhos para novas oportunidades de educação e trabalho.",
+      "autor": "Família atendida",
+      "contexto": "SASF Grajaú"
+    }
+  ],
+  "resultados": {
+    "titulo": "Resultados e Impacto Social",
+    "descricao": "Indicadores que refletem nossa atuação contínua na formação de talentos, no fortalecimento familiar e na inclusão produtiva.",
+    "indicadores": [
+      { "valor": "~1.000", "label": "Famílias acompanhadas pelo SASF Grajaú" },
+      { "valor": "Décadas", "label": "De atuação em São Paulo" },
+      { "valor": "Milhares", "label": "De vidas impactadas por nossos programas" },
+      { "valor": "100%", "label": "Compromisso com conformidade legal e transparência" }
+    ]
+  },
+  "empresasParceiras": {
+    "titulo": "Empresas Parceiras",
+    "descricao": "Organizações que acreditam na formação de jovens talentos e contribuem para a inclusão profissional, fortalecendo a responsabilidade social corporativa.",
+    "setores": [
+      "Comércio e varejo",
+      "Serviços administrativos",
+      "Tecnologia e telecomunicações",
+      "Saúde e farmácia",
+      "Indústria e produção",
+      "Educação e terceiro setor"
+    ],
+    "cta": "Seja uma empresa parceira"
+  },
+  "programas": [
+    "Proteção social básica",
+    "Qualificação profissional",
+    "Inclusão digital",
+    "Fortalecimento comunitário",
+    "Garantia de direitos",
+    "Aprendizagem profissional",
+    "Desenvolvimento humano"
+  ],
+  "seoKeywords": "jovem aprendiz são paulo, programa jovem aprendiz, lei da aprendizagem, contratação de aprendizes, gestão de aprendizes, inclusão digital, capacitação profissional, formação de jovens talentos, aprendizagem profissional, entidade formadora, mercado de trabalho, responsabilidade social, desenvolvimento profissional, inclusão produtiva, qualificação profissional, tecnologia na educação, moodle, formação corporativa, organização social são paulo, projetos sociais, ceja brasil"
+}

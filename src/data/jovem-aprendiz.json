@@ -1,9 +1,20 @@
 {
   "hero": {
-    "titulo": "Programa Jovem Aprendiz",
-    "subtitulo": "Captação, seleção, contratação e acompanhamento pedagógico com total conformidade à Lei da Aprendizagem e foco no desenvolvimento de jovens talentos.",
+    "titulo": "Programa Jovem Aprendiz CEJA Brasil",
+    "subtitulo": "Formação de Jovens Talentos com Excelência e Conformidade Legal",
     "ctaEmpresa": "Quero contratar aprendizes",
     "ctaJovem": "Cadastrar meu currículo"
+  },
+  "apresentacao": {
+    "titulo": "Programa Jovem Aprendiz CEJA Brasil",
+    "subtitulo": "Formação de Jovens Talentos com Excelência e Conformidade Legal",
+    "ctaProposta": "Solicite uma Proposta para sua Empresa",
+    "ctaEspecialista": "Falar com um Especialista em Aprendizagem",
+    "paragrafos": [
+      "O CEJA Brasil atua na captação, seleção, contratação, formação e acompanhamento pedagógico de jovens aprendizes, assegurando total conformidade com a Lei da Aprendizagem (Lei nº 10.097/2000) e demais normativas trabalhistas vigentes.",
+      "Nossa metodologia integra qualificação profissional, desenvolvimento socioemocional e acompanhamento contínuo, preparando jovens para os desafios do mercado de trabalho e contribuindo para a formação de profissionais éticos, qualificados e comprometidos.",
+      "Por meio de uma atuação estratégica junto às empresas parceiras, promovemos a inclusão produtiva de adolescentes e jovens, fortalecendo a responsabilidade social corporativa e contribuindo para o desenvolvimento sustentável das organizações."
+    ]
   },
   "etapas": [
     {
@@ -38,5 +49,6 @@
   "diferencial": {
     "titulo": "CEJA Brasil: Entidade Qualificadora",
     "descricao": "Atuamos com autoridade técnica na estruturação do programa de aprendizagem, garantindo conformidade legal, trilhas formativas e governança para empresas e jovens."
-  }
+  },
+  "seoKeywords": "jovem aprendiz, lei da aprendizagem, contratação de aprendizes, gestão de aprendizes, inclusão produtiva, capacitação profissional, formação de talentos, programa de aprendizagem, recrutamento de jovens aprendizes, desenvolvimento profissional, ceja brasil"
 }

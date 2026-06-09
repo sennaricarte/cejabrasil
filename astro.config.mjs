@@ -6,6 +6,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://sennaricarte.github.io',
+  base: '/cejabrasil',
   integrations: [react()],
   vite: {
     plugins: [tailwindcss()]

@@ -1,0 +1,344 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import CertificacoesSection from '../components/CertificacoesSection.astro';
+import dados from '../data/sobre.json';
+import equipamentosSociais from '../assets/sociais/equipamentos-sociais.jpg';
+import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
+import parceriaEscolaConsultor from '../assets/estagio/parceria-escola-consultor.jpg';
+import heroEstagio from '../assets/estagio/hero-estagio.jpg';
+import cardVagas from '../assets/vagas/card-vagas.jpg';
+---
+
+<Layout
+	title="Sobre o CEJA Brasil | Organização Social e Inclusão Profissional em São Paulo"
+	description="Conheça o CEJA Brasil: décadas de atuação na inclusão social, educacional e profissional, com projetos em São Paulo, SASF Grajaú, Jovem Aprendiz e qualificação profissional."
+	keywords={dados.seoKeywords}
+>
+	<section class="relative overflow-hidden bg-white py-20">
+		<div class="pointer-events-none absolute -left-10 top-16 h-24 w-24 rounded-full bg-ceja-blue/15"></div>
+		<div class="pointer-events-none absolute right-8 top-20 h-20 w-20 rounded-[45%_55%_50%_50%] bg-ceja-green/30"></div>
+
+		<div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+			<div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Institucional</p>
+				<h1 class="mt-4 text-4xl font-black leading-tight text-ceja-blue-dark sm:text-5xl lg:text-6xl">
+					{dados.hero.titulo}
+				</h1>
+				<p class="mt-6 max-w-2xl text-lg leading-relaxed text-ceja-muted">
+					{dados.hero.subtitulo}
+				</p>
+			</div>
+
+			<div class="relative mx-auto w-full max-w-xl">
+				<div class="pointer-events-none absolute -left-6 top-6 h-14 w-24 rounded-[60%_40%_45%_55%] bg-ceja-blue/20"></div>
+				<div class="pointer-events-none absolute right-3 -bottom-3 h-16 w-28 rounded-[35%_65%_50%_50%] bg-ceja-orange/40"></div>
+				<div class="overflow-hidden rounded-[2.8rem] border-8 border-white bg-white shadow-[0_30px_60px_-28px_rgba(15,74,110,0.28)]">
+					<Image
+						src={equipamentosSociais}
+						alt="Comunidade em atividade educacional promovida pelo CEJA Brasil em equipamento social"
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-[420px] w-full object-cover"
+					/>
+				</div>
+				<div class="absolute -bottom-8 left-4 hidden h-36 w-44 overflow-hidden rounded-[1.6rem] border-4 border-white bg-white shadow-xl sm:block">
+					<Image
+						src={formacaoComunitaria}
+						alt="Jovens em formação comunitária e desenvolvimento profissional"
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-full w-full object-cover"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-ceja-surface py-20 sm:py-24" aria-labelledby="quem-somos-ceja">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+				<div>
+					<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Quem somos</p>
+					<h2 id="quem-somos-ceja" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
+						CONHEÇA O CEJA BRASIL
+					</h2>
+					<div class="mt-8 space-y-6 text-base leading-relaxed text-ceja-muted">
+						{
+							dados.paragrafos.map((paragrafo) => (
+								<p>{paragrafo}</p>
+							))
+						}
+					</div>
+				</div>
+
+				<div class="overflow-hidden rounded-[2rem] border-8 border-white shadow-xl">
+					<Image
+						src={parceriaEscolaConsultor}
+						alt="Equipe CEJA Brasil em articulação com escolas, empresas e parceiros institucionais"
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-[420px] w-full object-cover"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="nossa-historia" class="bg-white py-20" aria-labelledby="historia-titulo">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+				<div>
+					<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-green">Nossa História</p>
+					<h2 id="historia-titulo" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
+						{dados.nossaHistoria.titulo}
+					</h2>
+					<p class="mt-5 text-base leading-relaxed text-ceja-muted">{dados.nossaHistoria.descricao}</p>
+					<ul class="mt-8 space-y-3">
+						{
+							dados.nossaHistoria.valores.map((valor) => (
+								<li class="flex items-start gap-3 text-sm leading-relaxed text-ceja-muted">
+									<span class="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-ceja-orange" aria-hidden="true"></span>
+									{valor}
+								</li>
+							))
+						}
+					</ul>
+				</div>
+				<div class="overflow-hidden rounded-[2rem] border border-ceja-blue-light shadow-sm">
+					<Image
+						src={heroEstagio}
+						alt="Jovens em ambiente educacional e profissional durante formação do CEJA Brasil"
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-[360px] w-full object-cover"
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sasf-grajau" class="bg-ceja-surface py-20" aria-labelledby="sasf-titulo">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="overflow-hidden rounded-[2.5rem] border border-ceja-green/30 bg-gradient-to-br from-ceja-green-light/50 via-white to-ceja-blue-light/30 p-8 shadow-sm sm:p-10">
+				<div class="flex flex-wrap items-center gap-3">
+					<span class="inline-flex rounded-full bg-ceja-green px-4 py-1.5 text-xs font-extrabold uppercase tracking-wide text-white">
+						Proteção Social
+					</span>
+					<span class="text-sm font-semibold text-ceja-blue-dark">~1.000 famílias acompanhadas</span>
+				</div>
+				<h2 id="sasf-titulo" class="mt-5 text-3xl font-black text-ceja-blue-dark sm:text-4xl">
+					{dados.sasfGrajau.titulo}
+				</h2>
+				<p class="mt-5 max-w-4xl text-base leading-relaxed text-ceja-muted">
+					{dados.sasfGrajau.descricao}
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-white py-20" aria-labelledby="experiencia-titulo">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="rounded-[2.5rem] border border-ceja-blue-light bg-ceja-surface p-8 sm:p-10">
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Credibilidade institucional</p>
+				<h2 id="experiencia-titulo" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
+					{dados.experiencia.titulo}
+				</h2>
+				<div class="mt-6 space-y-5 text-base leading-relaxed text-ceja-muted">
+					{
+						dados.experiencia.paragrafos.map((paragrafo) => (
+							<p>{paragrafo}</p>
+						))
+					}
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="bg-ceja-surface py-20">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-3xl text-center">
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Nossas frentes</p>
+				<h2 class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">Educação, tecnologia e formação integral</h2>
+			</div>
+
+			<div class="mt-10 grid gap-6 md:grid-cols-3">
+				{
+					dados.secoesTematicas.map((secao) => (
+						<article class="flex h-full flex-col rounded-[2rem] border border-ceja-blue-light bg-white p-7 shadow-sm">
+							<div class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-ceja-blue/10 text-ceja-blue">
+								{secao.icone === 'atividades' && (
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6" aria-hidden="true">
+										<path d="M4 19h16M6 16l3-8 3 5 3-7 3 10" />
+									</svg>
+								)}
+								{secao.icone === 'tecnologia' && (
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6" aria-hidden="true">
+										<rect x="3" y="4" width="18" height="12" rx="2" />
+										<path d="M8 20h8M12 16v4" />
+									</svg>
+								)}
+								{secao.icone === 'aprendiz' && (
+									<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="h-6 w-6" aria-hidden="true">
+										<path d="M12 3 4 7.5 12 12l8-4.5L12 3Z" />
+										<path d="M4 12.5 12 17l8-4.5M4 17.5 12 22l8-4.5" />
+									</svg>
+								)}
+							</div>
+							<h3 class="mt-5 text-xl font-bold text-ceja-blue-dark">{secao.titulo}</h3>
+							<p class="mt-3 flex-1 text-sm leading-relaxed text-ceja-muted">{secao.descricao}</p>
+							{secao.link && (
+								<a
+									href={secao.link}
+									class="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-ceja-blue transition hover:text-ceja-orange"
+								>
+									{secao.linkLabel}
+									<span aria-hidden="true">→</span>
+								</a>
+							)}
+						</article>
+					))
+				}
+			</div>
+
+			<div class="mt-10 rounded-[2rem] border border-ceja-blue-light bg-white p-8 shadow-sm">
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-green">Áreas de atuação</p>
+				<ul class="mt-6 flex flex-wrap gap-3" aria-label="Programas e frentes de atuação do CEJA Brasil">
+					{
+						dados.programas.map((programa) => (
+							<li class="rounded-full border border-ceja-blue/20 bg-ceja-blue-light/40 px-5 py-2 text-sm font-semibold text-ceja-blue-dark">
+								{programa}
+							</li>
+						))
+					}
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="depoimentos" class="bg-white py-20" aria-labelledby="depoimentos-titulo">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-3xl text-center">
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Depoimentos</p>
+				<h2 id="depoimentos-titulo" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
+					Histórias reais de transformação
+				</h2>
+				<p class="mt-4 text-ceja-muted">
+					Jovens aprendizes, empresas parceiras e famílias que tiveram suas vidas impactadas pelas ações do CEJA Brasil.
+				</p>
+			</div>
+
+			<div class="mt-10 grid gap-6 md:grid-cols-3">
+				{
+					dados.depoimentos.map((depoimento) => (
+						<blockquote class="flex h-full flex-col rounded-[2rem] border border-ceja-blue-light bg-ceja-surface p-7 shadow-sm">
+							<p class="flex-1 text-sm leading-relaxed text-ceja-muted">"{depoimento.texto}"</p>
+							<footer class="mt-6 border-t border-ceja-blue-light pt-4">
+								<p class="font-bold text-ceja-blue-dark">{depoimento.autor}</p>
+								<p class="mt-1 text-xs font-semibold uppercase tracking-wide text-ceja-blue">{depoimento.contexto}</p>
+							</footer>
+						</blockquote>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<section id="resultados" class="bg-ceja-header py-20 text-white" aria-labelledby="resultados-titulo">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="mx-auto max-w-3xl text-center">
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-orange">Impacto social</p>
+				<h2 id="resultados-titulo" class="mt-3 text-3xl font-bold sm:text-4xl">{dados.resultados.titulo}</h2>
+				<p class="mt-4 text-ceja-blue-light">{dados.resultados.descricao}</p>
+			</div>
+
+			<div class="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+				{
+					dados.resultados.indicadores.map((item) => (
+						<div class="rounded-[2rem] border border-white/20 bg-white/10 p-6 text-center backdrop-blur-sm">
+							<p class="text-4xl font-black text-ceja-orange">{item.valor}</p>
+							<p class="mt-3 text-sm leading-relaxed text-ceja-blue-light">{item.label}</p>
+						</div>
+					))
+				}
+			</div>
+		</div>
+	</section>
+
+	<section id="empresas-parceiras" class="bg-ceja-surface py-20" aria-labelledby="parceiras-titulo">
+		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
+			<div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+				<div>
+					<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Parcerias</p>
+					<h2 id="parceiras-titulo" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
+						{dados.empresasParceiras.titulo}
+					</h2>
+					<p class="mt-5 text-base leading-relaxed text-ceja-muted">{dados.empresasParceiras.descricao}</p>
+					<a
+						href="/empresas"
+						class="mt-8 inline-flex rounded-full bg-ceja-orange px-8 py-3 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-105"
+					>
+						{dados.empresasParceiras.cta}
+					</a>
+				</div>
+				<div class="rounded-[2rem] border border-ceja-blue-light bg-white p-8 shadow-sm">
+					<p class="text-sm font-semibold text-ceja-blue-dark">Setores com os quais atuamos</p>
+					<ul class="mt-6 grid gap-3 sm:grid-cols-2">
+						{
+							dados.empresasParceiras.setores.map((setor) => (
+								<li class="rounded-xl bg-ceja-surface px-4 py-3 text-sm font-medium text-ceja-muted">{setor}</li>
+							))
+						}
+					</ul>
+					<div class="mt-8 overflow-hidden rounded-2xl">
+						<Image
+							src={cardVagas}
+							alt="Jovens talentos em preparação para o mercado de trabalho com empresas parceiras"
+							width={1400}
+							height={933}
+							format="webp"
+							quality="mid"
+							class="h-48 w-full object-cover"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<CertificacoesSection />
+
+	<section class="bg-ceja-blue-dark py-16">
+		<div class="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
+			<div>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-orange">Faça parte</p>
+				<h2 class="mt-2 text-3xl font-black text-white sm:text-4xl">Quer apoiar ou se conectar ao CEJA Brasil?</h2>
+				<p class="mt-4 max-w-2xl text-ceja-blue-light">
+					Seja como empresa parceira, instituição de ensino ou apoiador, há diversas formas de contribuir com nossa missão.
+				</p>
+			</div>
+			<div class="flex flex-wrap gap-4">
+				<a
+					href="/contato"
+					class="inline-flex rounded-full bg-ceja-orange px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-105"
+				>
+					Fale conosco
+				</a>
+				<a
+					href="/empresas"
+					class="inline-flex rounded-full border-2 border-white px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:bg-white hover:text-ceja-blue-dark"
+				>
+					Parcerias corporativas
+				</a>
+			</div>
+		</div>
+	</section>
+</Layout>
