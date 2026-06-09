@@ -22,21 +22,18 @@
   "certificacoes": [
     {
       "sigla": "CMDCA",
-      "imageKey": "cmdca",
       "nome": "Conselho Municipal dos Direitos da Criança e do Adolescente",
       "descricao": "Representa o vínculo do CEJA com as políticas municipais de proteção integral, garantindo que nossas ações com jovens e adolescentes estejam alinhadas ao Estatuto da Criança e do Adolescente (ECA) e ao controle social da comunidade.",
       "destaque": "Proteção integral e participação social"
     },
     {
       "sigla": "COMAS",
-      "imageKey": "comas",
       "nome": "Conselho Municipal de Assistência Social",
       "descricao": "Atesta nossa integração ao Sistema Único de Assistência Social (SUAS), validando projetos sociais, equipamentos comunitários e ações de impacto voltadas a famílias e territórios em situação de vulnerabilidade.",
       "destaque": "Assistência social e SUAS"
     },
     {
       "sigla": "CEBAS",
-      "imageKey": "cebas",
       "nome": "Certificado de Entidade Beneficente de Assistência Social",
       "descricao": "Certificação federal que reconhece o CEJA como entidade de assistência social de utilidade pública. Reforça transparência na gestão, seriedade institucional e compromisso com o desenvolvimento social.",
       "destaque": "Utilidade pública e transparência"

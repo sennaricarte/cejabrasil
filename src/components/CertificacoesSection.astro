@@ -66,19 +66,6 @@ const accentClasses = [
 			{
 				certificacoesData.certificacoes.map((item, index) => (
 					<article class="flex h-full flex-col rounded-[2rem] border border-ceja-blue-light bg-white p-7 shadow-sm transition hover:shadow-md">
-						{'imageKey' in item && item.imageKey && item.imageKey in seloMap && (
-							<div class="mb-5 flex h-20 items-center justify-start rounded-xl bg-ceja-surface/60 px-4 py-2">
-								<Image
-									src={seloMap[item.imageKey as keyof typeof seloMap]}
-									alt={`Logo ${item.sigla}`}
-									width={200}
-									height={120}
-									format="webp"
-									quality="mid"
-									class="max-h-16 w-auto object-contain"
-								/>
-							</div>
-						)}
 						<div
 							class:list={[
 								'inline-flex w-fit rounded-full border px-4 py-1.5 text-xs font-extrabold uppercase tracking-wide',
