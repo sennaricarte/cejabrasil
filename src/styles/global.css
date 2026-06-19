@@ -10,7 +10,8 @@
 
 	/* Laranja — destaques e CTAs */
 	--color-ceja-orange: #e86b2a;
-	--color-ceja-yellow: #e86b2a;
+	/* Amarelo — links e destaques sobre fundo azul */
+	--color-ceja-yellow: #f5c400;
 
 	/* Verde — inclusão e sustentabilidade */
 	--color-ceja-green: #3a9b72;

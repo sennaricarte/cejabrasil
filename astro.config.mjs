@@ -7,6 +7,10 @@ import tailwindcss from '@tailwindcss/vite';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react()],
+  redirects: {
+    '/estagio': '/vagas/estagio',
+    '/pcd': '/vagas/pcd',
+  },
   vite: {
     plugins: [tailwindcss()]
   }

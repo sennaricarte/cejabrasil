@@ -1,0 +1,89 @@
+---
+import { Image } from 'astro:assets';
+import dados from '../data/doacao-direta.json';
+import pixQrcode from '../assets/doacao/pix-qrcode.png';
+---
+
+<section id="faca-sua-doacao" class="bg-white py-20 sm:py-24" aria-labelledby="doacao-direta-titulo">
+	<div class="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+		<div class="text-center">
+			<h2 id="doacao-direta-titulo" class="text-4xl font-black text-ceja-blue-dark sm:text-5xl">
+				{dados.titulo}
+			</h2>
+			<p class="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-ceja-muted sm:text-lg">
+				{dados.subtitulo}
+			</p>
+		</div>
+
+		<div class="mt-12 grid gap-6 md:grid-cols-2">
+			{
+				dados.opcoes.map((opcao) => (
+					<article
+						class:list={[
+							'relative flex flex-col rounded-[2rem] border p-8 pt-10 text-center shadow-sm',
+							opcao.destaque
+								? 'border-2 border-ceja-blue-dark bg-ceja-blue-light/50'
+								: 'border-ceja-blue-light bg-white',
+						]}
+					>
+						{opcao.badge && (
+							<div class="absolute -top-4 left-1/2 -translate-x-1/2">
+								<span class="inline-flex items-center gap-1.5 rounded-full bg-ceja-blue-dark px-4 py-1.5 text-xs font-extrabold uppercase tracking-wide text-white">
+									<svg viewBox="0 0 24 24" fill="currentColor" class="h-3.5 w-3.5 text-ceja-orange" aria-hidden="true">
+										<path d="M12 2l2.39 4.84L20 8.27l-4 3.9.94 5.5L12 15.77 7.06 17.67 8 12.17 4 8.27l5.61-.43L12 2z" />
+									</svg>
+									{opcao.badge}
+								</span>
+							</div>
+						)}
+
+						<p class="text-5xl font-black text-ceja-blue-dark">{opcao.valorLabel}</p>
+						<p class="mt-4 flex-1 text-sm leading-relaxed text-ceja-muted sm:text-base">{opcao.descricao}</p>
+
+						<a
+							href={opcao.linkDoacao}
+							target="_blank"
+							rel="noopener noreferrer"
+							class:list={[
+								'mt-8 inline-flex w-full items-center justify-center gap-2 rounded-2xl px-6 py-4 text-base font-bold text-white transition hover:brightness-105',
+								opcao.destaque ? 'bg-ceja-orange' : 'bg-ceja-blue-dark',
+							]}
+							aria-label={`${opcao.cta} via Cielo — abre em nova aba`}
+						>
+							{opcao.cta}
+							<span aria-hidden="true">→</span>
+						</a>
+					</article>
+				))
+			}
+		</div>
+
+		<div
+			id="pix-doacao"
+			class="mt-8 overflow-hidden rounded-[2rem] border border-ceja-blue-light bg-white shadow-sm"
+		>
+			<div class="grid items-center gap-8 p-8 sm:p-10 md:grid-cols-[auto_1fr]">
+				<div class="mx-auto shrink-0 rounded-2xl border border-ceja-blue-light bg-white p-3 shadow-sm">
+					<Image
+						src={pixQrcode}
+						alt={dados.pix.qrCodeAlt}
+						width={160}
+						height={160}
+						format="webp"
+						quality="mid"
+						class="h-40 w-40 object-contain"
+					/>
+				</div>
+
+				<div class="text-center md:text-left">
+					<h3 class="text-2xl font-black text-ceja-blue-dark sm:text-3xl">{dados.pix.titulo}</h3>
+					<p class="mt-3 text-sm leading-relaxed text-ceja-muted sm:text-base">{dados.pix.descricao}</p>
+					<div class="mt-5 inline-flex flex-col gap-1 rounded-2xl border border-ceja-blue/20 bg-ceja-surface px-5 py-3 text-sm text-ceja-blue-dark sm:flex-row sm:items-center sm:gap-3">
+						<span class="font-semibold">{dados.pix.chaveTipo}:</span>
+						<span class="font-mono">{dados.pix.chavePix}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

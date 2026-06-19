@@ -23,5 +23,56 @@
   ],
   "impacto": "Sua contribuição financia projetos de aprendizagem, inclusão produtiva, capacitação profissional e ações sociais que transformam vidas — com total transparência e rastreabilidade institucional.",
   "portalUrl": "https://www.nfp.fazenda.sp.gov.br/",
-  "portalLabel": "Acessar portal da Nota Fiscal Paulista"
+  "portalLabel": "Acessar portal da Nota Fiscal Paulista",
+  "hero": {
+    "titulo": "Doe ao CEJA Brasil pela Nota Fiscal Paulista",
+    "subtitulo": "Transforme suas compras do dia a dia em oportunidades reais de formação e inclusão social",
+    "ctaPortal": "Doar meus créditos agora",
+    "ctaPassos": "Ver passo a passo"
+  },
+  "sobrePrograma": {
+    "titulo": "O que é a Nota Fiscal Paulista?",
+    "paragrafos": [
+      "A Nota Fiscal Paulista é um programa do Governo do Estado de São Paulo que devolve parte do ICMS pago nas compras do consumidor. Ao informar o CPF no momento da compra, você participa de sorteios e pode acumular créditos para resgate ou doação a instituições cadastradas.",
+      "Para o CEJA Brasil, cada doação representa investimento direto em jovens aprendizes, estagiários, pessoas com deficiência e comunidades atendidas por nossos equipamentos sociais em São Paulo.",
+      "O processo é gratuito, simples e não altera o valor das suas compras — você apenas escolhe destinar os créditos acumulados a uma causa que gera impacto social mensurável."
+    ]
+  },
+  "projetosApoiados": [
+    {
+      "titulo": "Jovem Aprendiz",
+      "descricao": "Formação profissional e acompanhamento pedagógico de jovens entre 14 e 24 anos em conformidade com a Lei da Aprendizagem."
+    },
+    {
+      "titulo": "Inclusão de PCDs",
+      "descricao": "Capacitação, orientação e inserção de pessoas com deficiência no mercado de trabalho com suporte especializado."
+    },
+    {
+      "titulo": "Equipamentos Sociais",
+      "descricao": "Ações educacionais e comunitárias em territórios como Grajaú e outras regiões de São Paulo atendidas pelo CEJA."
+    },
+    {
+      "titulo": "Cursos Profissionalizantes",
+      "descricao": "Qualificação em áreas administrativas, tecnologia, saúde e serviços para ampliar empregabilidade."
+    }
+  ],
+  "faq": [
+    {
+      "pergunta": "Preciso pagar algo para doar?",
+      "resposta": "Não. A doação utiliza créditos que você já acumulou no programa. Não há custo adicional nas suas compras."
+    },
+    {
+      "pergunta": "Quem pode participar?",
+      "resposta": "Qualquer pessoa física maior de 18 anos, residente no Estado de São Paulo, com CPF cadastrado no portal da Nota Fiscal Paulista."
+    },
+    {
+      "pergunta": "Como encontro o CEJA Brasil no portal?",
+      "resposta": "No menu de doação de créditos, busque pelo nome CEJA Brasil ou informe o CNPJ 15.409.309/0001-07."
+    },
+    {
+      "pergunta": "Posso doar créditos de outra pessoa?",
+      "resposta": "Não. Os créditos são vinculados ao CPF cadastrado no programa e só podem ser doados pelo titular da conta."
+    }
+  ],
+  "seoKeywords": "doe ao ceja brasil, nota fiscal paulista, doação de créditos, contribuição social, projetos sociais são paulo, ceja brasil cnpj, programa nota fiscal paulista, doar créditos nfp"
 }

@@ -1,5 +1,9 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "astro"
+  "framework": "astro",
+  "redirects": [
+    { "source": "/estagio", "destination": "/vagas/estagio", "permanent": true },
+    { "source": "/pcd", "destination": "/vagas/pcd", "permanent": true }
+  ]
 }

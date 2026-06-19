@@ -1,0 +1,30 @@
+{
+  "titulo": "Faça sua Doação",
+  "subtitulo": "Sua contribuição transforma vidas através da educação. Escolha o valor e doe com segurança.",
+  "opcoes": [
+    {
+      "id": "doar-10",
+      "valorLabel": "R$ 10",
+      "descricao": "Apoia materiais didáticos para um jovem.",
+      "cta": "Doar R$ 10",
+      "linkDoacao": "https://cieloecommerce.cielo.com.br/checkoutui/#/?id=35cf754e-e3aa-4405-b162-760fbece7d57",
+      "destaque": false
+    },
+    {
+      "id": "doar-100",
+      "valorLabel": "R$ 100",
+      "descricao": "Contribui com recursos para formação e materiais de vários jovens.",
+      "cta": "Doar R$ 100",
+      "linkDoacao": "https://cieloecommerce.cielo.com.br/checkoutui/#/?id=821d2b03-0cb4-4f30-acf8-64d829d4c07d",
+      "destaque": true,
+      "badge": "Transformador"
+    }
+  ],
+  "pix": {
+    "titulo": "Doe também pelo PIX",
+    "descricao": "Escaneie o QR Code ao lado com o app do seu banco ou abra a câmera do celular. Rápido, seguro e sem taxas.",
+    "chavePix": "15.409.309/0001-07",
+    "chaveTipo": "CNPJ",
+    "qrCodeAlt": "QR Code PIX para doação ao CEJA Brasil"
+  }
+}

@@ -51,15 +51,23 @@ import dados from '../data/nota-fiscal-paulista.json';
 					<p class="max-w-3xl text-sm leading-relaxed text-ceja-muted sm:text-base">
 						{dados.impacto}
 					</p>
-					<a
-						href={dados.portalUrl}
-						target="_blank"
-						rel="noopener noreferrer"
-						class="inline-flex shrink-0 rounded-full bg-ceja-green px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110"
-						aria-label={`${dados.portalLabel} — abre em nova aba`}
-					>
-						{dados.portalLabel}
-					</a>
+					<div class="flex shrink-0 flex-wrap gap-3">
+						<a
+							href="/doe"
+							class="inline-flex rounded-full border-2 border-ceja-blue px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-ceja-blue transition hover:bg-ceja-blue hover:text-white"
+						>
+							Saiba como doar
+						</a>
+						<a
+							href={dados.portalUrl}
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex rounded-full bg-ceja-green px-7 py-3 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110"
+							aria-label={`${dados.portalLabel} — abre em nova aba`}
+						>
+							{dados.portalLabel}
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
