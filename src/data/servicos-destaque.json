@@ -1,5 +1,5 @@
 {
-  "titulo": "Serviços em destaque",
+  "titulo": "Serviços em Destaque",
   "subtitulo": "Soluções completas para empresas, jovens e comunidade",
   "intro": "O CEJA Brasil atua com excelência técnica e impacto social em programas que conectam talento, inclusão e formação profissional.",
   "servicos": [
@@ -20,12 +20,12 @@
       "badge": "Lei de Cotas"
     },
     {
-      "titulo": "Serviços sociais e educacionais",
+      "titulo": "Serviços Sociais e Educacionais",
       "descricao": "Equipamentos sociais, projetos comunitários e formação profissional em arcos ocupacionais que fortalecem famílias, territórios e a empregabilidade de jovens.",
       "href": "/cursos",
       "cta": "Ver formações",
       "imageKey": "educacao",
-      "badge": "Impacto social"
+      "badge": "Impacto Social"
     }
   ]
 }

@@ -10,19 +10,6 @@ import parceriaEscolaConsultor from '../assets/estagio/parceria-escola-consultor
 import heroPcd from '../assets/pcd/hero-pcd.jpg';
 import equipamentosSociais from '../assets/sociais/equipamentos-sociais.jpg';
 import servicosDestaque from '../data/servicos-destaque.json';
-import adm6 from '../assets/courses/adm6.jpg';
-import adm4 from '../assets/courses/adm4.jpg';
-import varejo6 from '../assets/courses/varejo6.jpg';
-import contact4 from '../assets/courses/contact4.jpg';
-import contact6 from '../assets/courses/contact6.jpg';
-import teleprocess4h48 from '../assets/courses/teleprocess4h48.jpg';
-import producao6 from '../assets/courses/producao6.jpg';
-import saude6 from '../assets/courses/saude6.jpg';
-import alimentacao6 from '../assets/courses/alimentacao6.jpg';
-import manutencao4 from '../assets/courses/manutencao4.jpg';
-import frentista4 from '../assets/courses/frentista4.jpg';
-import telecom4h48 from '../assets/courses/telecom4h48.jpg';
-import jardineiro4 from '../assets/courses/jardineiro4.jpg';
 
 const servicoImageMap = {
 	aprendiz: heroEstagio,
@@ -30,21 +17,6 @@ const servicoImageMap = {
 	educacao: equipamentosSociais,
 };
 
-const courseImageMap = {
-	adm6,
-	adm4,
-	varejo6,
-	contact4,
-	contact6,
-	teleprocess4h48,
-	producao6,
-	saude6,
-	alimentacao6,
-	manutencao4,
-	frentista4,
-	telecom4h48,
-	jardineiro4,
-};
 ---
 
 <Layout>
@@ -181,7 +153,7 @@ const courseImageMap = {
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-2xl text-center">
 				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Nossas Trilhas de Aprendizagem</p>
-				<h2 class="mt-3 text-3xl font-bold text-ceja-dark sm:text-4xl">Formação prática para gerar talentos prontos para o mercado</h2>
+				<h2 class="mt-3 text-3xl font-bold text-ceja-dark sm:text-4xl">Formação Prática para Gerar Talentos Prontos para o Mercado</h2>
 			</div>
 
 			<div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -191,7 +163,8 @@ const courseImageMap = {
 							title={course.title}
 							hours={course.hours}
 							description={course.description}
-							image={courseImageMap[course.imageKey as keyof typeof courseImageMap]}
+							imageKey={course.imageKey}
+							detailHref={'slug' in course && course.slug ? `/cursos/${course.slug}` : '#'}
 						/>
 					))
 				}
@@ -207,7 +180,7 @@ const courseImageMap = {
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-3xl text-center">
 				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Por que contratar através do CEJA?</p>
-				<h2 class="mt-3 text-3xl font-bold text-ceja-dark sm:text-4xl">Mais segurança, eficiência e impacto para a sua empresa</h2>
+				<h2 class="mt-3 text-3xl font-bold text-ceja-dark sm:text-4xl">Mais Segurança, Eficiência e Impacto para a Sua Empresa</h2>
 			</div>
 
 			<div class="mt-12 grid gap-6 md:grid-cols-3">

@@ -46,7 +46,7 @@
       "descricao": "Captação, seleção, contratação, formação e acompanhamento pedagógico com total conformidade à Lei da Aprendizagem e foco no desenvolvimento de jovens talentos.",
       "icone": "aprendiz",
       "link": "/jovem-aprendiz",
-      "linkLabel": "Conhecer o programa"
+      "linkLabel": "Conhecer o Programa"
     }
   ],
   "depoimentos": [
@@ -80,23 +80,23 @@
     "titulo": "Empresas Parceiras",
     "descricao": "Organizações que acreditam na formação de jovens talentos e contribuem para a inclusão profissional, fortalecendo a responsabilidade social corporativa.",
     "setores": [
-      "Comércio e varejo",
-      "Serviços administrativos",
-      "Tecnologia e telecomunicações",
-      "Saúde e farmácia",
-      "Indústria e produção",
-      "Educação e terceiro setor"
+      "Comércio e Varejo",
+      "Serviços Administrativos",
+      "Tecnologia e Telecomunicações",
+      "Saúde e Farmácia",
+      "Indústria e Produção",
+      "Educação e Terceiro Setor"
     ],
-    "cta": "Seja uma empresa parceira"
+    "cta": "Seja uma Empresa Parceira"
   },
   "programas": [
-    "Proteção social básica",
-    "Qualificação profissional",
-    "Inclusão digital",
-    "Fortalecimento comunitário",
-    "Garantia de direitos",
-    "Aprendizagem profissional",
-    "Desenvolvimento humano"
+    "Proteção Social Básica",
+    "Qualificação Profissional",
+    "Inclusão Digital",
+    "Fortalecimento Comunitário",
+    "Garantia de Direitos",
+    "Aprendizagem Profissional",
+    "Desenvolvimento Humano"
   ],
   "seoKeywords": "jovem aprendiz são paulo, programa jovem aprendiz, lei da aprendizagem, contratação de aprendizes, gestão de aprendizes, inclusão digital, capacitação profissional, formação de jovens talentos, aprendizagem profissional, entidade formadora, mercado de trabalho, responsabilidade social, desenvolvimento profissional, inclusão produtiva, qualificação profissional, tecnologia na educação, moodle, formação corporativa, organização social são paulo, projetos sociais, ceja brasil"
 }

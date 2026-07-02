@@ -1,0 +1,17 @@
+{
+  "slug": "telematica",
+  "nomeOficial": "Programa de Aprendizagem Profissional em Operação de Contact Center",
+  "nomeComercial": "Programa de Formação em Experiência do Cliente (CX)",
+  "hours": "4h",
+  "imageKey": "contact4",
+  "intro": "Formação para atuação em contact center e canais digitais de atendimento, com foco em experiência do cliente, comunicação multicanal e relacionamento de qualidade.",
+  "perfil": [
+    "Atendimento Telefônico",
+    "Atendimento via WhatsApp",
+    "Atendimento por Chat",
+    "Atendimento por E-mail",
+    "Gestão do Relacionamento por Redes Sociais",
+    "Relacionamento com Clientes"
+  ],
+  "seoKeywords": "curso contact center, telemática, experiência do cliente, CX, atendimento multicanal, formação profissional, jovem aprendiz, ceja brasil"
+}

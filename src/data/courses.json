@@ -1,8 +1,10 @@
 [
 	{
-		"title": "Arco Serviços Administrativos",
+		"slug": "adm",
+		"title": "Programa de Aprendizagem Profissional em Serviços Administrativos",
+		"nomeComercial": "Formação de Talentos para Áreas Administrativas",
 		"hours": "6h",
-		"description": "Formação para rotinas administrativas, organização de documentos e apoio operacional em escritórios.",
+		"description": "Formação de Talentos para Áreas Administrativas, com apoio a RH, Financeiro, Compras e Comercial.",
 		"imageKey": "adm6"
 	},
 	{
@@ -12,15 +14,19 @@
 		"imageKey": "adm4"
 	},
 	{
-		"title": "Ocupação: Atendimento no Comércio e Varejo",
+		"slug": "varejo",
+		"title": "Programa de Aprendizagem Profissional em Atendimento no Comércio e Varejo",
+		"nomeComercial": "Programa Jovens Talentos em Comércio, Vendas e Atendimento",
 		"hours": "6h",
-		"description": "Capacitação para atendimento consultivo, relacionamento com clientes e operação de loja.",
+		"description": "Programa Jovens Talentos em Comércio, Vendas e Atendimento, com formação para o varejo e serviços.",
 		"imageKey": "varejo6"
 	},
 	{
-		"title": "Arco Telemática – Operador de Contact Center",
+		"slug": "telematica",
+		"title": "Programa de Aprendizagem Profissional em Operação de Contact Center",
+		"nomeComercial": "Programa de Formação em Experiência do Cliente (CX)",
 		"hours": "4h",
-		"description": "Desenvolvimento de competências para atendimento remoto, escuta ativa e resolução ágil de demandas.",
+		"description": "Programa de Formação em Experiência do Cliente (CX), com atendimento multicanal e relacionamento com clientes.",
 		"imageKey": "contact4"
 	},
 	{
@@ -30,21 +36,27 @@
 		"imageKey": "contact6"
 	},
 	{
-		"title": "Operador de Redes de Teleprocessamento",
+		"slug": "ti",
+		"title": "Operador de Redes de Processamento",
+		"nomeComercial": "Programa Jovens Talentos em Tecnologia da Informação",
 		"hours": "4h48",
-		"description": "Base técnica para monitoramento de redes, suporte inicial e boas práticas em ambientes conectados.",
+		"description": "Programa Jovens Talentos em Tecnologia da Informação, com suporte técnico, redes corporativas e segurança da informação.",
 		"imageKey": "teleprocess4h48"
 	},
 	{
+		"slug": "producao",
 		"title": "Arco Produção",
+		"nomeComercial": "Programa de Formação em Produção, Qualidade e Processos",
 		"hours": "6h",
-		"description": "Trilha voltada para processos produtivos, controle de qualidade e segurança nas operações.",
+		"description": "Programa de Formação em Produção, Qualidade e Processos, com automação, IoT e melhoria contínua.",
 		"imageKey": "producao6"
 	},
 	{
+		"slug": "farmacia",
 		"title": "Arco Farmacêutico e Saúde",
+		"nomeComercial": "Programa de Formação em Saúde, Atendimento e Serviços Farmacêuticos",
 		"hours": "6h",
-		"description": "Capacitação para atuação em rotinas de apoio no setor farmacêutico e de serviços de saúde.",
+		"description": "Programa de Formação em Saúde, Atendimento e Serviços Farmacêuticos, com legislação sanitária e ética profissional.",
 		"imageKey": "saude6"
 	},
 	{
@@ -54,15 +66,19 @@
 		"imageKey": "alimentacao6"
 	},
 	{
+		"slug": "manutencao",
 		"title": "Arco Aprendizagem de Manutenção Preventiva e Corretiva",
+		"nomeComercial": "Programa de Formação em Manutenção e Confiabilidade Operacional",
 		"hours": "4h",
-		"description": "Desenvolvimento técnico para rotinas de manutenção com foco em prevenção, diagnóstico e correção.",
+		"description": "Programa de Formação em Manutenção e Confiabilidade Operacional, com prevenção de falhas e gestão de ativos.",
 		"imageKey": "manutencao4"
 	},
 	{
+		"slug": "frentista",
 		"title": "Ocupação: Auxiliar de Frentista",
+		"nomeComercial": "Programa para Formação de Talentos do Setor de Mobilidade",
 		"hours": "4h",
-		"description": "Treinamento para atendimento em postos de serviço com segurança, agilidade e cordialidade.",
+		"description": "Programa para Formação de Talentos do Setor de Mobilidade, com combustíveis, conveniência e atendimento ao cliente.",
 		"imageKey": "frentista4"
 	},
 	{
@@ -72,9 +88,11 @@
 		"imageKey": "telecom4h48"
 	},
 	{
+		"slug": "jardineiro",
 		"title": "Ocupação: Jardineiro",
+		"nomeComercial": "Programa de Formação em Paisagismo, Meio Ambiente e Conservação",
 		"hours": "4h",
-		"description": "Capacitação para manutenção de áreas verdes, paisagismo e cuidados técnicos com plantas.",
+		"description": "Programa de Formação em Paisagismo, Meio Ambiente e Conservação, com jardinagem, sustentabilidade e segurança do trabalho.",
 		"imageKey": "jardineiro4"
 	}
 ]
