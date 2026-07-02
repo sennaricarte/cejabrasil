@@ -1,4 +1,6 @@
 ﻿---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
 import CourseIcon from './CourseIcon.astro';
 
 interface Props {
@@ -7,9 +9,10 @@ interface Props {
 	description: string;
 	imageKey: string;
 	detailHref?: string;
+	coverImage?: ImageMetadata;
 }
 
-const { title, hours, description, imageKey, detailHref = '#' } = Astro.props;
+const { title, hours, description, imageKey, detailHref = '#', coverImage } = Astro.props;
 const isLongTitle = title.length > 58;
 ---
 
@@ -18,11 +21,27 @@ const isLongTitle = title.length > 58;
 		<div class="absolute right-3 top-3 z-10 inline-flex w-fit rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-ceja-blue-dark shadow-sm">
 			{hours}
 		</div>
-		<div class="flex h-52 items-center justify-center overflow-hidden rounded-[2rem_2rem_2.8rem_1.4rem] bg-gradient-to-br from-ceja-blue-light via-white to-ceja-green-light/40">
-			<div class="flex h-32 w-32 items-center justify-center rounded-full bg-white/80 text-ceja-header shadow-inner transition duration-500 group-hover:scale-110 group-hover:text-ceja-blue">
-				<CourseIcon imageKey={imageKey} title={title} class="h-16 w-16" />
-			</div>
-		</div>
+		{
+			coverImage ? (
+				<div class="h-52 overflow-hidden rounded-[2rem_2rem_2.8rem_1.4rem]">
+					<Image
+						src={coverImage}
+						alt={`Imagem ilustrativa do curso ${title}`}
+						width={1400}
+						height={933}
+						format="webp"
+						quality="mid"
+						class="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+					/>
+				</div>
+			) : (
+				<div class="flex h-52 items-center justify-center overflow-hidden rounded-[2rem_2rem_2.8rem_1.4rem] bg-gradient-to-br from-ceja-blue-light via-white to-ceja-green-light/40">
+					<div class="flex h-32 w-32 items-center justify-center rounded-full bg-white/80 text-ceja-header shadow-inner transition duration-500 group-hover:scale-110 group-hover:text-ceja-blue">
+						<CourseIcon imageKey={imageKey} title={title} class="h-16 w-16" />
+					</div>
+				</div>
+			)
+		}
 		<div class="pointer-events-none absolute -bottom-3 left-4 h-6 w-20 rounded-[55%_45%_60%_40%] bg-ceja-orange/35"></div>
 	</div>
 

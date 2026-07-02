@@ -5,16 +5,18 @@ import CertificacoesSection from '../components/CertificacoesSection.astro';
 import NotaFiscalPaulistaSection from '../components/NotaFiscalPaulistaSection.astro';
 import courses from '../data/courses.json';
 import Layout from '../layouts/Layout.astro';
+import { courseCoverImages } from '../utils/courseCoverImages';
+import heroJovemAprendiz from '../assets/jovem-aprendiz/hero-jovem-aprendiz.png';
 import heroEstagio from '../assets/estagio/hero-estagio.jpg';
 import parceriaEscolaConsultor from '../assets/estagio/parceria-escola-consultor.jpg';
-import heroPcd from '../assets/pcd/hero-pcd.jpg';
-import equipamentosSociais from '../assets/sociais/equipamentos-sociais.jpg';
+import heroPcd from '../assets/pcd/hero-pcd-inclusao.png';
+import heroServicosEducacionais from '../assets/cursos/hero-servicos-educacionais.png';
 import servicosDestaque from '../data/servicos-destaque.json';
 
 const servicoImageMap = {
-	aprendiz: heroEstagio,
+	aprendiz: heroJovemAprendiz,
 	pcd: heroPcd,
-	educacao: equipamentosSociais,
+	educacao: heroServicosEducacionais,
 };
 
 ---
@@ -115,7 +117,7 @@ const servicoImageMap = {
 								</span>
 								<Image
 									src={servicoImageMap[servico.imageKey as keyof typeof servicoImageMap]}
-									alt={`Imagem ilustrativa do serviço ${servico.titulo}`}
+									alt={`Imagem ilustrativa de inclusão no trabalho — ${servico.titulo}`}
 									width={1400}
 									height={933}
 									format="webp"
@@ -165,6 +167,7 @@ const servicoImageMap = {
 							description={course.description}
 							imageKey={course.imageKey}
 							detailHref={'slug' in course && course.slug ? `/cursos/${course.slug}` : '#'}
+							coverImage={'slug' in course && course.slug ? courseCoverImages[course.slug] : undefined}
 						/>
 					))
 				}

@@ -10,6 +10,20 @@
   ],
   "imagens": [
     {
+      "arquivo": "jovem-aprendiz/diferencial-jovem-aprendiz.png",
+      "plataforma": "Pexels",
+      "tema": "Jovem em ambiente profissional de formação",
+      "url": "https://www.pexels.com/photo/16856317/",
+      "credito": "Domingos Henriques"
+    },
+    {
+      "arquivo": "jovem-aprendiz/hero-jovem-aprendiz.png",
+      "plataforma": "Pexels",
+      "tema": "Jovem aprendiz em ambiente profissional",
+      "url": "https://www.pexels.com/photo/16856358/",
+      "credito": "Domingos Henriques"
+    },
+    {
       "arquivo": "estagio/hero-estagio.jpg",
       "plataforma": "Unsplash",
       "tema": "Jovens diversos em ambiente colaborativo",
@@ -28,10 +42,11 @@
       "url": "https://unsplash.com/photos/1553877522"
     },
     {
-      "arquivo": "pcd/hero-pcd.jpg",
+      "arquivo": "pcd/hero-pcd-inclusao.png",
       "plataforma": "Pexels",
-      "tema": "Inclusão de PCD no ambiente de trabalho",
-      "url": "https://www.pexels.com/photo/5686105/"
+      "tema": "Profissional PCD em ambiente de trabalho inclusivo",
+      "url": "https://www.pexels.com/photo/7446646/",
+      "credito": "Gustavo Fring"
     },
     {
       "arquivo": "pcd/metodologia-pcd.jpg",
@@ -58,10 +73,25 @@
       "url": "https://www.pexels.com/photo/8199568/"
     },
     {
-      "arquivo": "sociais/equipamentos-sociais.jpg",
+      "arquivo": "courses/jardineiro-hero.png",
       "plataforma": "Pexels",
-      "tema": "Ação social e equipamentos comunitários",
-      "url": "https://www.pexels.com/photo/6646918/"
+      "tema": "Jardineiro cultivando plantas com ferramentas manuais em canteiro",
+      "url": "https://www.pexels.com/photo/4894631/",
+      "credito": "Gustavo Fring"
+    },
+    {
+      "arquivo": "courses/frentista-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Frentista abastecendo veículo em posto de combustível",
+      "url": "https://www.pexels.com/photo/20500735/",
+      "credito": "Engin Akyurt"
+    },
+    {
+      "arquivo": "cursos/hero-servicos-educacionais.png",
+      "plataforma": "Pexels",
+      "tema": "Formação educacional e serviços sociais",
+      "url": "https://www.pexels.com/photo/37761864/",
+      "credito": "Irene Vega"
     },
     {
       "arquivo": "sociais/formacao-comunitaria.jpg",

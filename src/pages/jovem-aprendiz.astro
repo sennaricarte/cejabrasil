@@ -2,8 +2,8 @@
 import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import dados from '../data/jovem-aprendiz.json';
-import heroEstagio from '../assets/estagio/hero-estagio.jpg';
-import parceriaEscolaConsultor from '../assets/estagio/parceria-escola-consultor.jpg';
+import heroJovemAprendiz from '../assets/jovem-aprendiz/hero-jovem-aprendiz.png';
+import diferencialJovemAprendiz from '../assets/jovem-aprendiz/diferencial-jovem-aprendiz.png';
 import cardVagas from '../assets/vagas/card-vagas.jpg';
 ---
 
@@ -46,8 +46,8 @@ import cardVagas from '../assets/vagas/card-vagas.jpg';
 				<div class="pointer-events-none absolute right-3 -bottom-3 h-16 w-28 rounded-[35%_65%_50%_50%] bg-ceja-orange/40"></div>
 				<div class="overflow-hidden rounded-[2.8rem] border-8 border-white bg-white shadow-[0_30px_60px_-28px_rgba(15,74,110,0.28)]">
 					<Image
-						src={heroEstagio}
-						alt="Jovens diversos em ambiente profissional colaborativo durante programa de aprendizagem"
+						src={heroJovemAprendiz}
+						alt="Jovem aprendiz em traje profissional com postura confiante em ambiente corporativo"
 						width={1400}
 						height={933}
 						format="webp"
@@ -205,8 +205,8 @@ import cardVagas from '../assets/vagas/card-vagas.jpg';
 			</div>
 			<div class="overflow-hidden rounded-[2rem] border-8 border-white shadow-xl">
 				<Image
-					src={parceriaEscolaConsultor}
-					alt="Consultores e gestores em reunião de parceria para programa jovem aprendiz"
+					src={diferencialJovemAprendiz}
+					alt="Jovem aprendiz sorrindo com crachá em ambiente profissional de formação"
 					width={1400}
 					height={933}
 					format="webp"

@@ -3,7 +3,8 @@ import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 import CourseCard from '../components/CourseCard.astro';
 import courses from '../data/courses.json';
-import heroEstagio from '../assets/estagio/hero-estagio.jpg';
+import { courseCoverImages } from '../utils/courseCoverImages';
+import heroServicosEducacionais from '../assets/cursos/hero-servicos-educacionais.png';
 
 const selectedCourses = [
 	'Programa de Aprendizagem Profissional em Serviços Administrativos',
@@ -47,8 +48,8 @@ const categoryFilters = ['Todos', 'Administrativo', 'Tecnologia', 'Serviços', '
 				<div class="pointer-events-none absolute right-3 -bottom-3 h-16 w-28 rounded-[35%_65%_50%_50%] bg-ceja-orange/45"></div>
 				<div class="overflow-hidden rounded-[2.8rem] border-8 border-white bg-white shadow-[0_30px_60px_-28px_rgba(10,29,55,0.45)]">
 					<Image
-						src={heroEstagio}
-						alt="Jovens profissionais em sala corporativa durante capacitação prática"
+						src={heroServicosEducacionais}
+						alt="Jovem estudando e anotando em caderno em sala de aula iluminada"
 						width={1400}
 						height={933}
 						format="webp"
@@ -90,6 +91,7 @@ const categoryFilters = ['Todos', 'Administrativo', 'Tecnologia', 'Serviços', '
 							description={course!.description}
 							imageKey={course!.imageKey}
 							detailHref={'slug' in course! && course!.slug ? `/cursos/${course!.slug}` : '#'}
+							coverImage={'slug' in course! && course!.slug ? courseCoverImages[course!.slug] : undefined}
 						/>
 					))
 				}
