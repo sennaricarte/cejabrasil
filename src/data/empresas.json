@@ -5,20 +5,24 @@
   },
   "beneficios": [
     {
-      "titulo": "Redução de Custos",
-      "descricao": "Isenção de encargos e consultoria gratuita para implementar programas de aprendizagem, estágio e inclusão com eficiência."
+      "titulo": "Desenvolvimento de Talentos",
+      "descricao": "A aprendizagem permite formar profissionais desde o início de sua trajetória, moldando comportamentos, competências e conhecimentos de acordo com a cultura organizacional da empresa."
     },
     {
-      "titulo": "Segurança Jurídica",
-      "descricao": "Gestão completa de contratos, prazos e conformidade legal, incluindo obrigações da Lei de Cotas e Lei da Aprendizagem."
+      "titulo": "Formação de Pipeline de Sucessão",
+      "descricao": "Muitas empresas utilizam a aprendizagem como porta de entrada para futuros auxiliares administrativos, assistentes, analistas e até lideranças. O programa deixa de ser uma obrigação legal para se tornar uma estratégia de recrutamento e retenção."
     },
     {
-      "titulo": "Impacto Social",
-      "descricao": "Fortaleça sua marca empregadora como empresa inclusiva e socialmente responsável com impacto real na comunidade."
+      "titulo": "ESG e Responsabilidade Social",
+      "descricao": "A contratação de aprendizes contribui diretamente para os pilares Social e de Governança, demonstrando compromisso com inclusão produtiva, diversidade, empregabilidade juvenil e desenvolvimento sustentável."
     },
     {
-      "titulo": "Agilidade no Recrutamento",
-      "descricao": "Banco de talentos pré-selecionados, triagem assertiva e encaminhamento rápido de perfis alinhados ao seu negócio."
+      "titulo": "Redução de Turnover",
+      "descricao": "Jovens que iniciam sua trajetória profissional em um ambiente estruturado tendem a criar maior vínculo com a organização, reduzindo custos futuros de recrutamento e seleção."
+    },
+    {
+      "titulo": "Fortalecimento da Marca Empregadora",
+      "descricao": "Empresas que investem em programas de aprendizagem costumam ser percebidas como organizações que valorizam o desenvolvimento humano e oferecem oportunidades de crescimento."
     }
   ],
   "fluxoAtendimento": [
