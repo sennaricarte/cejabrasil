@@ -60,9 +60,11 @@
 		"imageKey": "saude6"
 	},
 	{
+		"slug": "alimentacao",
 		"title": "Arco Alimentação e Atendimento",
+		"nomeComercial": "Programa de Formação em Alimentação, Serviços e Atendimento",
 		"hours": "6h",
-		"description": "Formação para operações de alimentação, boas práticas sanitárias e atendimento de excelência.",
+		"description": "Programa de Formação em Alimentação, Serviços e Atendimento, com boas práticas sanitárias e atendimento de excelência.",
 		"imageKey": "alimentacao6"
 	},
 	{

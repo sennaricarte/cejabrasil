@@ -73,6 +73,34 @@
       "url": "https://www.pexels.com/photo/8199568/"
     },
     {
+      "arquivo": "courses/producao-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Profissional de produção montando produto artesanal em ambiente industrial",
+      "url": "https://www.pexels.com/photo/13524888/",
+      "credito": "Fernanda Simões"
+    },
+    {
+      "arquivo": "courses/farmacia-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Atendimento em balcão de farmácia com profissional e cliente",
+      "url": "https://www.pexels.com/photo/12332074/",
+      "credito": "José Ismael Espínola"
+    },
+    {
+      "arquivo": "courses/alimentacao-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Atendente sorrindo e atendendo cliente em balcão de loja de alimentação e varejo",
+      "url": "https://www.pexels.com/photo/6545325/",
+      "credito": "Tima Miroshnichenko"
+    },
+    {
+      "arquivo": "courses/manutencao-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Técnico de manutenção medindo equipamentos elétricos com multimetro",
+      "url": "https://www.pexels.com/photo/33531830/",
+      "credito": "bulat843"
+    },
+    {
       "arquivo": "courses/telecom-hero.png",
       "plataforma": "Pexels",
       "tema": "Técnico de telecomunicações realizando reparo em poste com equipamentos de segurança",
