@@ -39,7 +39,7 @@
 		"slug": "ti",
 		"title": "Operador de Redes de Processamento",
 		"nomeComercial": "Programa Jovens Talentos em Tecnologia da Informação",
-		"hours": "4h48",
+		"hours": "5h",
 		"description": "Programa Jovens Talentos em Tecnologia da Informação, com suporte técnico, redes corporativas e segurança da informação.",
 		"imageKey": "teleprocess4h48"
 	},
@@ -82,9 +82,11 @@
 		"imageKey": "frentista4"
 	},
 	{
+		"slug": "telecom",
 		"title": "Auxiliar de Reparos de Linhas e Aparelhos de Telecomunicações",
+		"nomeComercial": "Programa de Formação em Telecomunicações e Infraestrutura de Redes",
 		"hours": "4h48",
-		"description": "Trilha para suporte técnico em telecomunicações, com noções práticas de instalação e reparo.",
+		"description": "Programa de Formação em Telecomunicações e Infraestrutura de Redes, com instalação, reparo de linhas e aparelhos.",
 		"imageKey": "telecom4h48"
 	},
 	{
