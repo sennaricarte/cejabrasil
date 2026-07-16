@@ -12,6 +12,9 @@ export default defineConfig({
     '/estagio': '/vagas/estagio',
     '/pcd': '/vagas/pcd',
   },
+  build: {
+    inlineStylesheets: 'always'
+  },
   vite: {
     plugins: [tailwindcss()]
   }
