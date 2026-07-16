@@ -48,8 +48,8 @@ const isLongTitle = title.length > 58;
 	<div class="mt-6 flex flex-1 flex-col">
 		<h3
 			class:list={[
-				'line-clamp-2 min-h-[3.4rem] font-bold leading-tight text-ceja-blue-dark',
-				isLongTitle ? 'text-xl' : 'text-2xl',
+				'font-bold leading-snug text-ceja-blue-dark',
+				isLongTitle ? 'text-lg sm:text-xl' : 'text-xl sm:text-2xl',
 			]}
 		>
 			{title}

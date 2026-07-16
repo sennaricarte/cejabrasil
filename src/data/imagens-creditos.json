@@ -73,6 +73,48 @@
       "url": "https://www.pexels.com/photo/8199568/"
     },
     {
+      "arquivo": "courses/ti-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Profissional de tecnologia com headset operando computador em ambiente corporativo",
+      "url": "https://www.pexels.com/photo/8204319/",
+      "credito": "Kampus Production"
+    },
+    {
+      "arquivo": "courses/telematica6-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Equipe de operadores de contact center com headsets em ambiente profissional",
+      "url": "https://www.pexels.com/photo/7035859/",
+      "credito": "Ksenia Kartasheva"
+    },
+    {
+      "arquivo": "courses/telematica-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Profissional de atendimento sorrindo e cumprimentando cliente em ambiente de serviços",
+      "url": "https://www.pexels.com/photo/6684795/",
+      "credito": "Kampus Production"
+    },
+    {
+      "arquivo": "courses/adm4-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Profissional em rotina administrativa escrevendo em caderno com laptop e pastas organizadas",
+      "url": "https://www.pexels.com/photo/5196821/",
+      "credito": "Anna Tarazevich"
+    },
+    {
+      "arquivo": "courses/varejo-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Atendente sorrindo e atendendo cliente no balcão de loja de comércio e varejo",
+      "url": "https://www.pexels.com/photo/6545444/",
+      "credito": "Tima Miroshnichenko"
+    },
+    {
+      "arquivo": "courses/adm-hero.png",
+      "plataforma": "Pexels",
+      "tema": "Jovem profissional em ambiente de escritório durante formação em serviços administrativos",
+      "url": "https://www.pexels.com/photo/15104303/",
+      "credito": "Manuel Guillén Vega"
+    },
+    {
       "arquivo": "courses/producao-hero.png",
       "plataforma": "Pexels",
       "tema": "Profissional de produção montando produto artesanal em ambiente industrial",

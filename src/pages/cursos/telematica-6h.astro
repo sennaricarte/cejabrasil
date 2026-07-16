@@ -1,13 +1,13 @@
 ---
 import { Image } from 'astro:assets';
 import Layout from '../../layouts/Layout.astro';
-import telematicaHero from '../../assets/courses/telematica-hero.png';
-import dados from '../../data/cursos/telematica.json';
+import telematica6Hero from '../../assets/courses/telematica6-hero.png';
+import dados from '../../data/cursos/telematica-6h.json';
 ---
 
 <Layout
-	title="Curso de Telemática CEJA Brasil | Experiência do Cliente (CX)"
-	description="Conheça o Programa de Formação em Experiência do Cliente (CX) do CEJA Brasil — Operação de Contact Center."
+	title="Arco Telemática CEJA Brasil | Operador de Contact Center 6h"
+	description="Conheça o Arco Telemática – Operador de Contact Center do CEJA Brasil — formação ampliada com foco em indicadores e experiência do usuário."
 	keywords={dados.seoKeywords}
 >
 	<section class="relative overflow-hidden bg-white py-20">
@@ -34,8 +34,8 @@ import dados from '../../data/cursos/telematica.json';
 				<div class="pointer-events-none absolute right-3 -bottom-3 h-16 w-28 rounded-[35%_65%_50%_50%] bg-ceja-green/25"></div>
 				<div class="overflow-hidden rounded-[2.8rem] border-8 border-white bg-white shadow-[0_30px_60px_-28px_rgba(15,74,110,0.28)]">
 					<Image
-						src={telematicaHero}
-						alt="Profissional de atendimento sorrindo e cumprimentando cliente em ambiente de serviços"
+						src={telematica6Hero}
+						alt="Equipe de operadores de contact center com headsets em ambiente profissional de atendimento"
 						width={1400}
 						height={933}
 						format="webp"
@@ -47,17 +47,17 @@ import dados from '../../data/cursos/telematica.json';
 		</div>
 	</section>
 
-	<section class="bg-ceja-surface py-20 sm:py-24" aria-labelledby="perfil-telematica">
+	<section class="bg-ceja-surface py-20 sm:py-24" aria-labelledby="perfil-telematica-6h">
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="overflow-hidden rounded-[2.5rem] border border-ceja-blue-light bg-white shadow-sm">
 				<div class="p-8 sm:p-10 lg:p-12">
 					<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Competências desenvolvidas</p>
-					<h2 id="perfil-telematica" class="mt-3 text-3xl font-black text-ceja-blue-dark sm:text-4xl">Perfil do Curso</h2>
+					<h2 id="perfil-telematica-6h" class="mt-3 text-3xl font-black text-ceja-blue-dark sm:text-4xl">Perfil do Curso</h2>
 					<p class="mt-4 max-w-3xl text-base leading-relaxed text-ceja-muted">
-						O programa desenvolve competências para atuar em operações de contact center, dominando canais de comunicação e práticas de relacionamento que elevam a experiência do cliente.
+						O programa prepara jovens para atuar em contact center com excelência operacional, indicadores e foco na experiência do cliente.
 					</p>
 
-					<ul class="mt-10 grid gap-4 sm:grid-cols-2">
+					<ul class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
 						{
 							dados.perfil.map((item) => (
 								<li class="flex gap-3 rounded-2xl border border-ceja-blue-light bg-ceja-surface px-5 py-4">
@@ -77,7 +77,7 @@ import dados from '../../data/cursos/telematica.json';
 	<section class="bg-white py-16 sm:py-20">
 		<div class="mx-auto flex w-full max-w-7xl flex-col items-start justify-between gap-6 px-4 sm:px-6 lg:flex-row lg:items-center lg:px-8">
 			<p class="max-w-2xl text-lg font-semibold leading-relaxed text-ceja-blue-dark">
-				Interessado em ser Jovem Aprendiz na área de telemática e atendimento ao cliente? Cadastre-se no banco de talentos do CEJA Brasil.
+				Interessado em ser Jovem Aprendiz em contact center? Cadastre-se no banco de talentos do CEJA Brasil.
 			</p>
 			<div class="flex flex-wrap gap-4">
 				<a

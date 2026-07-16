@@ -8,7 +8,9 @@
 		"imageKey": "adm6"
 	},
 	{
+		"slug": "adm-4h",
 		"title": "Arco Serviços Administrativos",
+		"nomeComercial": "Formação em Serviços Administrativos",
 		"hours": "4h",
 		"description": "Trilha objetiva para apoio administrativo com foco em produtividade, comunicação e qualidade no atendimento interno.",
 		"imageKey": "adm4"
@@ -30,7 +32,9 @@
 		"imageKey": "contact4"
 	},
 	{
+		"slug": "telematica-6h",
 		"title": "Arco Telemática – Operador de Contact Center",
+		"nomeComercial": "Formação Ampliada em Operação de Contact Center",
 		"hours": "6h",
 		"description": "Formação ampliada para operação de contact center com foco em indicadores e experiência do usuário.",
 		"imageKey": "contact6"
