@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import '../styles/global.css';
 import cejaLogo from '../assets/ceja-brasil-logo.png';
+import lexend600 from '@fontsource/lexend/files/lexend-latin-600-normal.woff2?url';
 
 interface Props {
 	title?: string;
@@ -28,6 +29,7 @@ const ogImageURL = new URL(image, Astro.site);
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<link rel="preload" href={lexend600} as="font" type="font/woff2" crossorigin />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
@@ -217,7 +219,7 @@ const ogImageURL = new URL(image, Astro.site);
 
 			<div class="relative mx-auto flex w-full max-w-7xl flex-col items-center gap-6 px-4 text-center sm:px-6 lg:flex-row lg:justify-between lg:text-left lg:px-8">
 				<div class="max-w-2xl">
-					<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-yellow">Inclusão produtiva</p>
+					<p class="text-sm font-semibold uppercase tracking-[0.2em] text-white">Inclusão produtiva</p>
 					<h2 id="cta-inclusao-titulo" class="mt-2 text-2xl font-black text-white sm:text-3xl">
 						Inclusão para o Mundo do Trabalho
 					</h2>
@@ -227,7 +229,7 @@ const ogImageURL = new URL(image, Astro.site);
 				</div>
 				<a
 					href="/vagas/pcd"
-					class="inline-flex shrink-0 items-center rounded-full bg-ceja-orange px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white shadow-lg transition hover:-translate-y-0.5 hover:brightness-105"
+					class="inline-flex shrink-0 items-center rounded-full bg-ceja-orange-a11y px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white shadow-lg transition hover:-translate-y-0.5 hover:brightness-105"
 					aria-label="Conhecer o programa de inclusão PCD do CEJA Brasil"
 				>
 					Conhecer o programa PCD
@@ -238,7 +240,7 @@ const ogImageURL = new URL(image, Astro.site);
 		<a
 			href="/vagas/pcd#contato-pcd"
 			aria-label="Abrir recursos de acessibilidade e contato especializado em inclusão PCD"
-			class="fixed bottom-5 left-5 z-[60] inline-flex items-center gap-2 rounded-full border-2 border-ceja-green bg-ceja-blue-dark px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:border-ceja-green hover:bg-ceja-green focus:outline-none focus-visible:ring-2 focus-visible:ring-ceja-blue-light focus-visible:ring-offset-2 focus-visible:ring-offset-ceja-blue-dark"
+			class="fixed bottom-5 left-5 z-[60] inline-flex items-center gap-2 rounded-full border-2 border-ceja-green bg-ceja-blue-dark px-4 py-3 text-sm font-bold text-white shadow-lg transition hover:border-ceja-green hover:bg-ceja-green-a11y focus:outline-none focus-visible:ring-2 focus-visible:ring-ceja-blue-light focus-visible:ring-offset-2 focus-visible:ring-offset-ceja-blue-dark"
 		>
 			<svg viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true">
 				<path d="M12 2.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM8.25 9A2.25 2.25 0 0 0 6 11.25v2.5a.75.75 0 0 0 1.5 0v-2.5a.75.75 0 0 1 .75-.75h.257a3.74 3.74 0 0 1 2.552 1.005l.41.384a.75.75 0 0 0 1.026 0l.41-.384a3.74 3.74 0 0 1 2.552-1.005h.257a.75.75 0 0 1 .75.75v2.5a.75.75 0 0 0 1.5 0v-2.5A2.25 2.25 0 0 0 15.75 9h-1.69a5.22 5.22 0 0 0-2.06.425A5.22 5.22 0 0 0 9.94 9H8.25ZM12 14.25a.75.75 0 0 1 .75.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 .75-.75Z" />
@@ -285,9 +287,9 @@ const ogImageURL = new URL(image, Astro.site);
 						<ul class="mt-4 space-y-2 text-sm text-ceja-blue-light">
 							<li><a href="/jovem-aprendiz" class="transition hover:text-ceja-yellow">Jovem Aprendiz para Empresas</a></li>
 							<li><a href="/vagas/estagio" class="transition hover:text-ceja-yellow">Programa de Estágio Supervisionado</a></li>
-							<li><a href="/vagas/pcd" class="transition hover:text-ceja-green">Inclusão PCD no Mercado de Trabalho</a></li>
+							<li><a href="/vagas/pcd" class="transition hover:text-ceja-green-a11y">Inclusão PCD no Mercado de Trabalho</a></li>
 							<li><a href="/cursos" class="transition hover:text-ceja-yellow">Cursos de Formação Profissional</a></li>
-							<li><a href="/doe" class="transition hover:text-ceja-green">Doe pela Nota Fiscal Paulista</a></li>
+							<li><a href="/doe" class="transition hover:text-ceja-green-a11y">Doe pela Nota Fiscal Paulista</a></li>
 						</ul>
 					</div>
 
@@ -308,7 +310,7 @@ const ogImageURL = new URL(image, Astro.site);
 						</p>
 						<a
 							href="/contato"
-							class="mt-6 inline-flex rounded-full bg-ceja-orange px-6 py-3 text-xs font-extrabold uppercase tracking-wide text-white transition hover:brightness-105"
+							class="mt-6 inline-flex rounded-full bg-ceja-orange-a11y px-6 py-3 text-xs font-extrabold uppercase tracking-wide text-white transition hover:brightness-105"
 						>
 							SOLICITAR PROPOSTA
 						</a>

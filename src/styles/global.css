@@ -1,4 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend:wght@400;500;600;700&display=swap');
+@import '@fontsource/lexend/400.css';
+@import '@fontsource/lexend/500.css';
+@import '@fontsource/lexend/600.css';
+@import '@fontsource/lexend/700.css';
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import '@fontsource/inter/700.css';
 @import "tailwindcss";
 
 @theme {
@@ -16,6 +23,11 @@
 	/* Verde — inclusão e sustentabilidade */
 	--color-ceja-green: #3a9b72;
 	--color-ceja-green-light: #e8f6ef;
+
+	/* Variantes acessíveis (WCAG AA 4.5:1) */
+	--color-ceja-orange-a11y: #b34e1c;
+	--color-ceja-green-a11y: #2b7a58;
+	--color-ceja-blue-a11y: #1f6494;
 
 	/* Superfícies e texto (evita cinza frio) */
 	--color-ceja-surface: #f5f9fc;

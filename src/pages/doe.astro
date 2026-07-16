@@ -18,7 +18,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 
 		<div class="mx-auto grid w-full max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
 			<div>
-				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-green">Contribua sem custo</p>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-green-a11y">Contribua sem custo</p>
 				<h1 class="mt-4 text-4xl font-black leading-tight text-ceja-blue-dark sm:text-5xl lg:text-6xl">
 					{dados.hero.titulo}
 				</h1>
@@ -34,7 +34,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 						href={dados.portalUrl}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex rounded-full bg-ceja-green px-7 py-3 text-base font-semibold text-white transition hover:brightness-110"
+						class="inline-flex rounded-full bg-ceja-green-a11y px-7 py-3 text-base font-semibold text-white transition hover:brightness-110"
 						aria-label={`${dados.hero.ctaPortal} — abre em nova aba`}
 					>
 						{dados.hero.ctaPortal}
@@ -86,7 +86,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 			<div class="overflow-hidden rounded-[2.5rem] border border-ceja-blue-light bg-white shadow-sm">
 				<div class="grid gap-10 p-8 sm:p-10 lg:grid-cols-[1fr_1.1fr] lg:items-start lg:p-12">
 					<div>
-						<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Programa oficial</p>
+						<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue-a11y">Programa oficial</p>
 						<h2 id="sobre-nfp" class="mt-3 text-3xl font-black leading-tight text-ceja-blue-dark sm:text-4xl">
 							{dados.sobrePrograma.titulo}
 						</h2>
@@ -110,7 +110,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 	<section id="passo-a-passo" class="bg-white py-20 sm:py-24" aria-labelledby="passos-titulo">
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-2xl text-center">
-				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-green">Passo a passo</p>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-green-a11y">Passo a passo</p>
 				<h2 id="passos-titulo" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
 					Como Doar em 4 Passos
 				</h2>
@@ -141,7 +141,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 					href={dados.portalUrl}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="inline-flex rounded-full bg-ceja-green px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110"
+					class="inline-flex rounded-full bg-ceja-green-a11y px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-110"
 					aria-label={`${dados.portalLabel} — abre em nova aba`}
 				>
 					{dados.portalLabel}
@@ -153,7 +153,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 	<section class="bg-ceja-surface py-20 sm:py-24" aria-labelledby="projetos-titulo">
 		<div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-2xl text-center">
-				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Onde sua doação chega</p>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue-a11y">Onde sua doação chega</p>
 				<h2 id="projetos-titulo" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
 					Projetos Apoiados pela Sua Contribuição
 				</h2>
@@ -178,7 +178,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 	<section class="bg-white py-20 sm:py-24" aria-labelledby="faq-titulo">
 		<div class="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
 			<div class="text-center">
-				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue">Dúvidas frequentes</p>
+				<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue-a11y">Dúvidas frequentes</p>
 				<h2 id="faq-titulo" class="mt-3 text-3xl font-bold text-ceja-blue-dark sm:text-4xl">
 					Perguntas sobre a Doação
 				</h2>
@@ -191,7 +191,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 							<summary class="cursor-pointer list-none font-semibold text-ceja-blue-dark marker:content-none [&::-webkit-details-marker]:hidden">
 								<span class="flex items-center justify-between gap-4">
 									{item.pergunta}
-									<span class="text-ceja-green transition group-open:rotate-45" aria-hidden="true">+</span>
+									<span class="text-ceja-green-a11y transition group-open:rotate-45" aria-hidden="true">+</span>
 								</span>
 							</summary>
 							<p class="mt-3 text-sm leading-relaxed text-ceja-muted">{item.resposta}</p>
@@ -215,7 +215,7 @@ import formacaoComunitaria from '../assets/sociais/formacao-comunitaria.jpg';
 					href={dados.portalUrl}
 					target="_blank"
 					rel="noopener noreferrer"
-					class="inline-flex rounded-full bg-ceja-orange px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-105"
+					class="inline-flex rounded-full bg-ceja-orange-a11y px-8 py-4 text-sm font-extrabold uppercase tracking-wide text-white transition hover:brightness-105"
 					aria-label={`${dados.portalLabel} — abre em nova aba`}
 				>
 					{dados.portalLabel}
