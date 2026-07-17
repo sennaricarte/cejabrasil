@@ -70,7 +70,7 @@ import Layout from '../layouts/Layout.astro';
 							<li><strong>Telefone fixo:</strong> (11) 3214-4923</li>
 							<li>
 								<strong>WhatsApp Suporte 1:</strong>
-								<a class="text-ceja-blue underline-offset-2 hover:underline" href="https://wa.me/5511941737398" target="_blank" rel="noopener noreferrer">(11) 94173-7398</a>
+								<a class="text-ceja-blue underline-offset-2 hover:underline" href="https://wa.me/5511966931935" target="_blank" rel="noopener noreferrer">(11) 96693-1935</a>
 							</li>
 							<li>
 								<strong>WhatsApp Suporte 2:</strong>
@@ -111,18 +111,18 @@ import Layout from '../layouts/Layout.astro';
 
 			<div class="rounded-3xl bg-white p-8 shadow-[0_18px_40px_-24px_rgba(15,23,42,0.45)] sm:p-10">
 				<h2 class="text-2xl font-bold text-ceja-dark">Envie Sua Mensagem</h2>
-				<form class="mt-6 grid gap-4" action="#" method="post">
+				<form id="form-contato-principal" class="mt-6 grid gap-4" method="post">
 					<label class="text-sm font-medium text-ceja-muted">
 						Nome Completo
-						<input type="text" name="nome-completo" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+						<input type="text" name="nome-completo" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
 					</label>
 					<label class="text-sm font-medium text-ceja-muted">
 						E-mail Corporativo
-						<input type="email" name="email-corporativo" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+						<input type="email" name="email-corporativo" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
 					</label>
 					<label class="text-sm font-medium text-ceja-muted">
 						Telefone
-						<input type="tel" name="telefone" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+						<input type="tel" name="telefone" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
 					</label>
 					<label class="text-sm font-medium text-ceja-muted">
 						Empresa
@@ -149,6 +149,21 @@ import Layout from '../layouts/Layout.astro';
 						Enviar Mensagem
 					</button>
 				</form>
+				<script>
+					const formContato = document.getElementById('form-contato-principal');
+					formContato?.addEventListener('submit', (e) => {
+						e.preventDefault();
+						const f = new FormData(formContato);
+						const texto = `Olá! Assunto: ${f.get('assunto')}
+
+Nome: ${f.get('nome-completo')}
+E-mail: ${f.get('email-corporativo')}
+Telefone: ${f.get('telefone')}
+Empresa: ${f.get('empresa')}
+Mensagem: ${f.get('mensagem')}`;
+						window.open(`https://wa.me/5511945957746?text=${encodeURIComponent(texto)}`, '_blank');
+					});
+				</script>
 			</div>
 		</div>
 	</section>

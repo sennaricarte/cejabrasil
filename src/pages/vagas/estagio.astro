@@ -153,10 +153,10 @@ import parceriaEscolaConsultor from '../../assets/estagio/parceria-escola-consul
 		<div class="mx-auto w-full max-w-4xl px-4 sm:px-6 lg:px-8">
 			<div class="rounded-3xl bg-white p-8 shadow-[0_20px_45px_-24px_rgba(15,23,42,0.45)] sm:p-10">
 				<h2 class="text-3xl font-bold text-ceja-dark">Deseja Contratar Estagiários ou Firmar Convênio Escolar? Fale Conosco</h2>
-				<form class="mt-8 grid gap-4 sm:grid-cols-2" action="#" method="post">
+				<form id="form-parceria-estagio" class="mt-8 grid gap-4 sm:grid-cols-2" method="post">
 					<label class="text-sm font-medium text-ceja-muted">
 						Nome
-						<input type="text" name="nome" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+						<input type="text" name="nome" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
 					</label>
 					<label class="text-sm font-medium text-ceja-muted">
 						Empresa/Instituição
@@ -168,11 +168,11 @@ import parceriaEscolaConsultor from '../../assets/estagio/parceria-escola-consul
 					</label>
 					<label class="text-sm font-medium text-ceja-muted">
 						E-mail
-						<input type="email" name="email" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+						<input type="email" name="email" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
 					</label>
 					<label class="text-sm font-medium text-ceja-muted sm:col-span-2">
 						Telefone
-						<input type="tel" name="telefone" class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
+						<input type="tel" name="telefone" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
 					</label>
 					<label class="text-sm font-medium text-ceja-muted sm:col-span-2">
 						Mensagem
@@ -184,6 +184,22 @@ import parceriaEscolaConsultor from '../../assets/estagio/parceria-escola-consul
 						</button>
 					</div>
 				</form>
+				<script>
+					const formEstagio = document.getElementById('form-parceria-estagio');
+					formEstagio?.addEventListener('submit', (e) => {
+						e.preventDefault();
+						const f = new FormData(formEstagio);
+						const texto = `Olá! Gostaria de contratar estagiários ou firmar convênio escolar.
+
+Nome: ${f.get('nome')}
+Empresa/Instituição: ${f.get('empresa')}
+Cargo: ${f.get('cargo')}
+E-mail: ${f.get('email')}
+Telefone: ${f.get('telefone')}
+Mensagem: ${f.get('mensagem')}`;
+						window.open(`https://wa.me/5511945957746?text=${encodeURIComponent(texto)}`, '_blank');
+					});
+				</script>
 			</div>
 		</div>
 	</section>
