@@ -142,73 +142,209 @@ const ogImageURL = new URL(image, Astro.site);
 					</div>
 					<div class="flex items-center gap-5">
 						<p aria-label="Telefone de contato">Telefone: (11) 3214-4923</p>
-						<p aria-label="Endereço do CEJA Brasil">Rua Conselheiro Crispiniano, 105 - Centro, São Paulo, SP</p>
+						<p class="hidden md:block" aria-label="Endereço do CEJA Brasil">
+							Rua Conselheiro Crispiniano, 105 - Centro, São Paulo, SP
+						</p>
 					</div>
 				</div>
 			</div>
 
 			<div class="border-b border-ceja-blue-dark/15 bg-ceja-header">
-				<div class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-6 sm:px-6 lg:px-8">
-				<a href="/" aria-label="Página inicial CEJA Brasil">
-					<Image
-						src={cejaLogo}
-						alt="Logo CEJA Brasil com globo azul e mapa do Brasil em amarelo"
-						width={1024}
-						height={369}
-						class="h-auto w-52 object-contain sm:w-60"
-					/>
-				</a>
+				<div class="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:px-8">
+					<a href="/" aria-label="Página inicial CEJA Brasil">
+						<Image
+							src={cejaLogo}
+							alt="Logo CEJA Brasil com globo azul e mapa do Brasil em amarelo"
+							width={1024}
+							height={369}
+							class="h-auto w-44 object-contain sm:w-60"
+						/>
+					</a>
 
-				<nav aria-label="Navegação principal">
-					<ul class="flex items-center gap-4 text-base font-medium text-white sm:gap-6">
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/">Home</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/sobre">Sobre</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/jovem-aprendiz">Jovem Aprendiz</a></li>
-						<li class="group relative">
-							<a
-								class="relative inline-flex items-center gap-1 py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 group-hover:after:opacity-100 group-focus-within:after:opacity-100"
-								href="/vagas"
-								aria-haspopup="true"
+					<button
+						type="button"
+						id="menu-toggle"
+						class="inline-flex h-11 w-11 items-center justify-center rounded-xl text-white transition hover:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-ceja-yellow lg:hidden"
+						aria-controls="menu-mobile"
+						aria-expanded="false"
+						aria-label="Abrir menu de navegação"
+					>
+						<svg id="menu-icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="h-6 w-6" aria-hidden="true">
+							<path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+						</svg>
+						<svg id="menu-icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="hidden h-6 w-6" aria-hidden="true">
+							<path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+						</svg>
+					</button>
+
+					<nav class="hidden lg:block" aria-label="Navegação principal">
+						<ul class="flex items-center gap-4 text-base font-medium text-white sm:gap-6">
+							<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/">Home</a></li>
+							<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/sobre">Sobre</a></li>
+							<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/jovem-aprendiz">Jovem Aprendiz</a></li>
+							<li class="group relative">
+								<a
+									class="relative inline-flex items-center gap-1 py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 group-hover:after:opacity-100 group-focus-within:after:opacity-100"
+									href="/vagas"
+									aria-haspopup="true"
+								>
+									Vagas
+									<svg viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+										<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.25a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08Z" clip-rule="evenodd" />
+									</svg>
+								</a>
+								<ul
+									class="invisible absolute left-0 top-full z-50 mt-3 min-w-48 rounded-2xl border border-ceja-blue-dark/20 bg-ceja-header py-2 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
+									aria-label="Submenu de vagas"
+								>
+									<li>
+										<a href="/vagas" class="block px-4 py-2.5 text-sm text-white transition hover:bg-white/10 hover:text-ceja-yellow">
+											Banco de Talentos
+										</a>
+									</li>
+									<li>
+										<a href="/vagas/estagio" class="block px-4 py-2.5 text-sm text-white transition hover:bg-white/10 hover:text-ceja-yellow">
+											Estágio
+										</a>
+									</li>
+									<li>
+										<a href="/vagas/pcd" class="block px-4 py-2.5 text-sm text-white transition hover:bg-white/10 hover:text-ceja-yellow">
+											PCD
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/cursos">Cursos</a></li>
+							<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/empresas">Empresas</a></li>
+							<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/doe">Doe</a></li>
+							<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/contato">Contato</a></li>
+						</ul>
+					</nav>
+				</div>
+
+				<nav
+					id="menu-mobile"
+					class="hidden border-t border-white/10 bg-ceja-header lg:hidden"
+					aria-label="Navegação mobile"
+					hidden
+				>
+					<ul class="mx-auto flex w-full max-w-7xl flex-col px-4 py-3 text-base font-medium text-white sm:px-6">
+						<li>
+							<a href="/" class="menu-mobile-link block rounded-xl px-3 py-3 transition hover:bg-white/10 hover:text-ceja-yellow">Home</a>
+						</li>
+						<li>
+							<a href="/sobre" class="menu-mobile-link block rounded-xl px-3 py-3 transition hover:bg-white/10 hover:text-ceja-yellow">Sobre</a>
+						</li>
+						<li>
+							<a href="/jovem-aprendiz" class="menu-mobile-link block rounded-xl px-3 py-3 transition hover:bg-white/10 hover:text-ceja-yellow">Jovem Aprendiz</a>
+						</li>
+						<li>
+							<button
+								type="button"
+								id="menu-vagas-toggle"
+								class="flex w-full items-center justify-between rounded-xl px-3 py-3 text-left transition hover:bg-white/10 hover:text-ceja-yellow"
+								aria-expanded="false"
+								aria-controls="menu-vagas-submenu"
 							>
-								Vagas
-								<svg viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+								<span>Vagas</span>
+								<svg id="menu-vagas-chevron" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4 transition-transform" aria-hidden="true">
 									<path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 0 1 1.06.02L10 10.94l3.71-3.71a.75.75 0 1 1 1.06 1.06l-4.24 4.25a.75.75 0 0 1-1.06 0L5.21 8.29a.75.75 0 0 1 .02-1.08Z" clip-rule="evenodd" />
 								</svg>
-							</a>
-							<ul
-								class="invisible absolute left-0 top-full z-50 mt-3 min-w-48 rounded-2xl border border-ceja-blue-dark/20 bg-ceja-header py-2 opacity-0 shadow-lg transition-all duration-200 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100"
-								aria-label="Submenu de vagas"
-							>
+							</button>
+							<ul id="menu-vagas-submenu" class="mb-1 ml-3 hidden border-l border-white/20 pl-3" hidden>
 								<li>
-									<a href="/vagas" class="block px-4 py-2.5 text-sm text-white transition hover:bg-white/10 hover:text-ceja-yellow">
-										Banco de Talentos
-									</a>
+									<a href="/vagas" class="menu-mobile-link block rounded-xl px-3 py-2.5 text-sm transition hover:bg-white/10 hover:text-ceja-yellow">Banco de Talentos</a>
 								</li>
 								<li>
-									<a href="/vagas/estagio" class="block px-4 py-2.5 text-sm text-white transition hover:bg-white/10 hover:text-ceja-yellow">
-										Estágio
-									</a>
+									<a href="/vagas/estagio" class="menu-mobile-link block rounded-xl px-3 py-2.5 text-sm transition hover:bg-white/10 hover:text-ceja-yellow">Estágio</a>
 								</li>
 								<li>
-									<a href="/vagas/pcd" class="block px-4 py-2.5 text-sm text-white transition hover:bg-white/10 hover:text-ceja-yellow">
-										PCD
-									</a>
+									<a href="/vagas/pcd" class="menu-mobile-link block rounded-xl px-3 py-2.5 text-sm transition hover:bg-white/10 hover:text-ceja-yellow">PCD</a>
 								</li>
 							</ul>
 						</li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/cursos">Cursos</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/empresas">Empresas</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/doe">Doe</a></li>
-						<li><a class="relative inline-flex py-1 transition-colors duration-300 hover:text-ceja-yellow after:absolute after:left-1/2 after:top-full after:mt-1 after:h-1.5 after:w-1.5 after:-translate-x-1/2 after:rounded-full after:bg-ceja-yellow after:opacity-0 after:transition-opacity after:duration-300 hover:after:opacity-100" href="/contato">Contato</a></li>
+						<li>
+							<a href="/cursos" class="menu-mobile-link block rounded-xl px-3 py-3 transition hover:bg-white/10 hover:text-ceja-yellow">Cursos</a>
+						</li>
+						<li>
+							<a href="/empresas" class="menu-mobile-link block rounded-xl px-3 py-3 transition hover:bg-white/10 hover:text-ceja-yellow">Empresas</a>
+						</li>
+						<li>
+							<a href="/doe" class="menu-mobile-link block rounded-xl px-3 py-3 transition hover:bg-white/10 hover:text-ceja-yellow">Doe</a>
+						</li>
+						<li>
+							<a href="/contato" class="menu-mobile-link block rounded-xl px-3 py-3 transition hover:bg-white/10 hover:text-ceja-yellow">Contato</a>
+						</li>
 					</ul>
 				</nav>
 			</div>
-			</div>
 		</header>
 
-		<main class="pt-36">
+		<main class="pt-28 sm:pt-32 lg:pt-36">
 			<slot />
 		</main>
+
+		<script>
+			const menuToggle = document.getElementById('menu-toggle');
+			const menuMobile = document.getElementById('menu-mobile');
+			const iconOpen = document.getElementById('menu-icon-open');
+			const iconClose = document.getElementById('menu-icon-close');
+			const vagasToggle = document.getElementById('menu-vagas-toggle');
+			const vagasSubmenu = document.getElementById('menu-vagas-submenu');
+			const vagasChevron = document.getElementById('menu-vagas-chevron');
+
+			const setMenuOpen = (open) => {
+				if (!menuToggle || !menuMobile || !iconOpen || !iconClose) return;
+				menuToggle.setAttribute('aria-expanded', String(open));
+				menuToggle.setAttribute('aria-label', open ? 'Fechar menu de navegação' : 'Abrir menu de navegação');
+				menuMobile.hidden = !open;
+				menuMobile.classList.toggle('hidden', !open);
+				iconOpen.classList.toggle('hidden', open);
+				iconClose.classList.toggle('hidden', !open);
+				document.body.classList.toggle('overflow-hidden', open);
+			};
+
+			const setVagasOpen = (open) => {
+				if (!vagasToggle || !vagasSubmenu || !vagasChevron) return;
+				vagasToggle.setAttribute('aria-expanded', String(open));
+				vagasSubmenu.hidden = !open;
+				vagasSubmenu.classList.toggle('hidden', !open);
+				vagasChevron.classList.toggle('rotate-180', open);
+			};
+
+			menuToggle?.addEventListener('click', () => {
+				const open = menuToggle.getAttribute('aria-expanded') !== 'true';
+				setMenuOpen(open);
+				if (!open) setVagasOpen(false);
+			});
+
+			vagasToggle?.addEventListener('click', () => {
+				const open = vagasToggle.getAttribute('aria-expanded') !== 'true';
+				setVagasOpen(open);
+			});
+
+			menuMobile?.querySelectorAll('.menu-mobile-link').forEach((link) => {
+				link.addEventListener('click', () => {
+					setMenuOpen(false);
+					setVagasOpen(false);
+				});
+			});
+
+			document.addEventListener('keydown', (event) => {
+				if (event.key === 'Escape') {
+					setMenuOpen(false);
+					setVagasOpen(false);
+					menuToggle?.focus();
+				}
+			});
+
+			window.addEventListener('resize', () => {
+				if (window.matchMedia('(min-width: 1024px)').matches) {
+					setMenuOpen(false);
+					setVagasOpen(false);
+				}
+			});
+		</script>
 
 		<section
 			class="relative overflow-hidden bg-ceja-header py-14 sm:py-16"
