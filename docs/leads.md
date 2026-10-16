@@ -23,6 +23,7 @@ Pode ativar os dois ao mesmo tempo. Depois de definir as variáveis, faça um no
 1. Criar conta em resend.com e verificar o domínio `cejabrasil.org.br` (registros DNS).
 2. Criar uma API key e definir as três variáveis na Vercel.
 3. O e-mail chega em texto puro, com `Reply-To` apontando para o e-mail do lead.
+4. Sugestão de destinatário: `LEADS_EMAIL_TO=parcerias@cejabrasil.org.br`.
 
 ### Planilha Google (Apps Script)
 1. Crie uma planilha com uma aba chamada `Leads`.
