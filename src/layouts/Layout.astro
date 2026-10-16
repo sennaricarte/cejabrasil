@@ -7,6 +7,7 @@ import lexend600 from '@fontsource/lexend/files/lexend-latin-600-normal.woff2?ur
 interface Props {
 	title?: string;
 	description?: string;
+	/** @deprecated Ignorado: a meta keywords não é usada pelo Google. Mantido para não quebrar as páginas de curso. */
 	keywords?: string;
 	image?: string;
 	ogType?: string;
@@ -15,7 +16,6 @@ interface Props {
 const {
 	title = 'CEJA Brasil',
 	description = 'CEJA Brasil: formação e inclusão de jovens e PCDs no mercado de trabalho.',
-	keywords = 'jovem aprendiz, estágio, inclusão pcd, cursos profissionalizantes, ceja brasil',
 	image = '/og-image.png',
 	ogType = 'website',
 } = Astro.props;
@@ -28,15 +28,13 @@ const ogImageURL = new URL(image, Astro.site);
 <html lang="pt-BR">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="preload" href={lexend600} as="font" type="font/woff2" crossorigin />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" sizes="any" />
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 		<meta name="description" content={description} />
-		<meta name="keywords" content={keywords} />
 		<link rel="canonical" href={canonicalURL} />
 		<meta property="og:type" content={ogType} />
 		<meta property="og:url" content={canonicalURL} />
@@ -58,7 +56,7 @@ const ogImageURL = new URL(image, Astro.site);
 				'@type': 'NGO',
 				name: 'CEJA Brasil',
 				url: 'https://cejabrasil.org.br',
-				logo: 'https://cejabrasil.org.br/og-image.png',
+				logo: 'https://cejabrasil.org.br/logo-ceja-brasil.png',
 				description:
 					'ONG especializada na formação e inclusão de jovens e PCDs no mercado de trabalho.',
 				email: 'atendimento@cejabrasil.org.br',
