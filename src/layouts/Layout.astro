@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import '../styles/global.css';
 import cejaLogo from '../assets/ceja-brasil-logo.png';
+import CookieBanner from '../components/CookieBanner.astro';
 import lexend600 from '@fontsource/lexend/files/lexend-latin-600-normal.woff2?url';
 
 interface Props {
@@ -112,17 +113,49 @@ const ogImageURL = new URL(image, Astro.site);
 				],
 			})}
 		/>
-		<!-- Google tag (gtag.js): carrega em todo ambiente, mas só é configurada no domínio de produção -->
-		<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+		<!-- GA4: só carrega depois do aceite do visitante (ver CookieBanner) e apenas no domínio de produção -->
 		<script is:inline define:vars={{ GA_ID, GA_HOSTS }}>
-			window.dataLayer = window.dataLayer || [];
-			window.gtag = function () {
-				window.dataLayer.push(arguments);
-			};
-			window.gtag('js', new Date());
-			if (GA_HOSTS.includes(window.location.hostname)) {
-				window.gtag('config', GA_ID);
-			}
+			(function () {
+				var loaded = false;
+
+				function enable() {
+					if (GA_HOSTS.indexOf(window.location.hostname) === -1) return;
+					window['ga-disable-' + GA_ID] = false;
+					window.dataLayer = window.dataLayer || [];
+					window.gtag = function () {
+						window.dataLayer.push(arguments);
+					};
+					if (loaded) return;
+					loaded = true;
+					window.gtag('js', new Date());
+					window.gtag('config', GA_ID);
+					var s = document.createElement('script');
+					s.async = true;
+					s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+					document.head.appendChild(s);
+				}
+
+				function disable() {
+					window['ga-disable-' + GA_ID] = true;
+					window.gtag = undefined;
+					var labels = window.location.hostname.split('.');
+					var domains = [window.location.hostname, '.' + window.location.hostname, '.' + labels.slice(-3).join('.')];
+					document.cookie.split(';').forEach(function (c) {
+						var name = c.split('=')[0].trim();
+						if (!/^(_ga|_gid|_gat)/.test(name)) return;
+						domains.forEach(function (d) {
+							document.cookie = name + '=; max-age=0; path=/; domain=' + d;
+						});
+						document.cookie = name + '=; max-age=0; path=/';
+					});
+				}
+
+				window.cejaAnalytics = { enable: enable, disable: disable };
+
+				try {
+					if (window.localStorage.getItem('ceja-cookie-consent') === 'granted') enable();
+				} catch (e) {}
+			})();
 		</script>
 	</head>
 	<body class="bg-ceja-surface font-sans text-ceja-blue-dark antialiased">
@@ -498,8 +531,15 @@ const ogImageURL = new URL(image, Astro.site);
 
 			<div class="bg-ceja-blue-dark/90 px-4 py-4 text-center text-xs leading-relaxed text-ceja-blue-light sm:px-6 lg:px-8">
 				© 2026 CEJA Brasil - CNPJ: 15.409.309/0001-07. Entidade Qualificadora no Programa de Aprendizagem e Agente de Integração de Estágio. Todos os direitos reservados.
+				<span class="mt-2 block">
+					<a href="/politica-de-privacidade" class="underline underline-offset-2 transition hover:text-ceja-yellow">Política de Privacidade</a>
+					<span aria-hidden="true"> · </span>
+					<button type="button" data-cookie-preferences class="underline underline-offset-2 transition hover:text-ceja-yellow">Preferências de cookies</button>
+				</span>
 			</div>
 		</footer>
+
+		<CookieBanner />
 	</body>
 </html>
 
