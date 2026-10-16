@@ -3,7 +3,45 @@
   "outputDirectory": "dist",
   "framework": "astro",
   "redirects": [
-    { "source": "/estagio", "destination": "/vagas/estagio", "permanent": true },
-    { "source": "/pcd", "destination": "/vagas/pcd", "permanent": true }
+    {
+      "source": "/estagio",
+      "destination": "/empresas/estagio",
+      "statusCode": 301
+    },
+    {
+      "source": "/estagio/",
+      "destination": "/empresas/estagio",
+      "statusCode": 301
+    },
+    {
+      "source": "/vagas/estagio",
+      "destination": "/empresas/estagio",
+      "statusCode": 301
+    },
+    {
+      "source": "/vagas/estagio/",
+      "destination": "/empresas/estagio",
+      "statusCode": 301
+    },
+    {
+      "source": "/pcd",
+      "destination": "/empresas/inclusao-pcd",
+      "statusCode": 301
+    },
+    {
+      "source": "/pcd/",
+      "destination": "/empresas/inclusao-pcd",
+      "statusCode": 301
+    },
+    {
+      "source": "/vagas/pcd",
+      "destination": "/empresas/inclusao-pcd",
+      "statusCode": 301
+    },
+    {
+      "source": "/vagas/pcd/",
+      "destination": "/empresas/inclusao-pcd",
+      "statusCode": 301
+    }
   ]
 }
