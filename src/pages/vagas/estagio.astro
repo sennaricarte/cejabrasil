@@ -154,6 +154,12 @@ import parceriaEscolaConsultor from '../../assets/estagio/parceria-escola-consul
 			<div class="rounded-3xl bg-white p-8 shadow-[0_20px_45px_-24px_rgba(15,23,42,0.45)] sm:p-10">
 				<h2 class="text-3xl font-bold text-ceja-dark">Deseja Contratar Estagiários ou Firmar Convênio Escolar? Fale Conosco</h2>
 				<form id="form-parceria-estagio" class="mt-8 grid gap-4 sm:grid-cols-2" method="post">
+					<div class="absolute left-[-9999px]" aria-hidden="true">
+						<label>
+							Não preencha este campo
+							<input type="text" name="confirmacao" tabindex="-1" autocomplete="off" />
+						</label>
+					</div>
 					<label class="text-sm font-medium text-ceja-muted">
 						Nome
 						<input type="text" name="nome" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
@@ -185,9 +191,11 @@ import parceriaEscolaConsultor from '../../assets/estagio/parceria-escola-consul
 					</div>
 				</form>
 				<script>
+					import { sendLead } from '../../scripts/lead';
 					const formEstagio = document.getElementById('form-parceria-estagio');
 					formEstagio?.addEventListener('submit', (e) => {
 						e.preventDefault();
+						sendLead('parceria_estagio', formEstagio as HTMLFormElement);
 						const f = new FormData(formEstagio);
 						const texto = `Olá! Gostaria de contratar estagiários ou firmar convênio escolar.
 
