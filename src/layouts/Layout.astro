@@ -20,6 +20,9 @@ const {
 	ogType = 'website',
 } = Astro.props;
 
+const GA_ID = 'G-090YEKCVN2';
+const GA_HOSTS = ['cejabrasil.org.br', 'www.cejabrasil.org.br'];
+
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const ogImageURL = new URL(image, Astro.site);
 ---
@@ -109,6 +112,18 @@ const ogImageURL = new URL(image, Astro.site);
 				],
 			})}
 		/>
+		<!-- Google tag (gtag.js): carrega em todo ambiente, mas só é configurada no domínio de produção -->
+		<script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+		<script is:inline define:vars={{ GA_ID, GA_HOSTS }}>
+			window.dataLayer = window.dataLayer || [];
+			window.gtag = function () {
+				window.dataLayer.push(arguments);
+			};
+			window.gtag('js', new Date());
+			if (GA_HOSTS.includes(window.location.hostname)) {
+				window.gtag('config', GA_ID);
+			}
+		</script>
 	</head>
 	<body class="bg-ceja-surface font-sans text-ceja-blue-dark antialiased">
 		<header class="fixed inset-x-0 top-0 z-50 shadow-sm">
