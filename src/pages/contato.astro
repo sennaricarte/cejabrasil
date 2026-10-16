@@ -118,6 +118,12 @@ import Layout from '../layouts/Layout.astro';
 			<div class="rounded-3xl bg-white p-8 shadow-[0_18px_40px_-24px_rgba(15,23,42,0.45)] sm:p-10">
 				<h2 class="text-2xl font-bold text-ceja-dark">Envie Sua Mensagem</h2>
 				<form id="form-contato-principal" class="mt-6 grid gap-4" method="post">
+					<div class="absolute left-[-9999px]" aria-hidden="true">
+						<label>
+							Não preencha este campo
+							<input type="text" name="confirmacao" tabindex="-1" autocomplete="off" />
+						</label>
+					</div>
 					<label class="text-sm font-medium text-ceja-muted">
 						Nome Completo
 						<input type="text" name="nome-completo" required class="mt-1 w-full rounded-2xl border border-slate-300 px-4 py-3 focus:border-ceja-blue focus:outline-none" />
@@ -156,9 +162,11 @@ import Layout from '../layouts/Layout.astro';
 					</button>
 				</form>
 				<script>
+					import { sendLead } from '../scripts/lead';
 					const formContato = document.getElementById('form-contato-principal');
 					formContato?.addEventListener('submit', (e) => {
 						e.preventDefault();
+						sendLead('contato', formContato as HTMLFormElement);
 						const f = new FormData(formContato);
 						const texto = `Olá! Assunto: ${f.get('assunto')}
 
