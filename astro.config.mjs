@@ -9,8 +9,10 @@ export default defineConfig({
   site: 'https://cejabrasil.org.br',
   integrations: [sitemap()],
   redirects: {
-    '/estagio': '/vagas/estagio',
-    '/pcd': '/vagas/pcd',
+    '/estagio': '/empresas/estagio',
+    '/vagas/estagio': '/empresas/estagio',
+    '/pcd': '/empresas/inclusao-pcd',
+    '/vagas/pcd': '/empresas/inclusao-pcd',
   },
   build: {
     inlineStylesheets: 'always'
