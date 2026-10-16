@@ -4,8 +4,9 @@
  * Regras:
  * - Nunca enviar dados pessoais (nome, e-mail, telefone, mensagem).
  * - URLs de link são enviadas sem query string e sem hash.
- * - Fora do domínio de produção o gtag não é configurado (ver Layout.astro),
- *   então estes eventos não geram hits em dev nem em previews da Vercel.
+ * - window.gtag só existe depois do aceite de cookies e apenas no domínio de
+ *   produção (ver Layout.astro e consent.ts). Sem aceite, em dev ou em previews
+ *   da Vercel, track() não faz nada.
  *
  * Eventos:
  * - click_whatsapp      → clique em qualquer link wa.me

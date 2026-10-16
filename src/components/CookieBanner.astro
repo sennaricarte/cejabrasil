@@ -1,0 +1,42 @@
+---
+---
+
+<div
+	id="cookie-banner"
+	role="region"
+	aria-label="Aviso de cookies"
+	class="fixed inset-x-0 bottom-0 z-[70] p-4 sm:p-6"
+	hidden
+>
+	<div
+		class="mx-auto flex w-full max-w-4xl flex-col gap-4 rounded-3xl border border-ceja-blue-dark/15 bg-white p-6 shadow-[0_20px_50px_-20px_rgba(15,23,42,0.5)] md:flex-row md:items-center md:justify-between"
+	>
+		<p class="text-sm leading-relaxed text-ceja-muted">
+			Usamos cookies de análise (Google Analytics) para entender como o site é usado e melhorá-lo. Eles só são ativados
+			se você aceitar. Saiba mais na
+			<a href="/politica-de-privacidade" class="font-semibold text-ceja-blue-a11y underline underline-offset-2">
+				Política de Privacidade
+			</a>.
+		</p>
+		<div class="flex shrink-0 flex-wrap gap-3">
+			<button
+				type="button"
+				data-cookie-decline
+				class="inline-flex rounded-full border-2 border-ceja-blue px-6 py-2.5 text-sm font-bold text-ceja-blue transition hover:bg-ceja-blue hover:text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-ceja-blue focus-visible:ring-offset-2"
+			>
+				Recusar
+			</button>
+			<button
+				type="button"
+				data-cookie-accept
+				class="inline-flex rounded-full bg-ceja-orange-a11y px-6 py-2.5 text-sm font-bold text-white transition hover:brightness-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-ceja-orange-a11y focus-visible:ring-offset-2"
+			>
+				Aceitar
+			</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	import '../scripts/consent';
+</script>

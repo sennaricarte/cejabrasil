@@ -1,0 +1,135 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const atualizadoEm = '16 de outubro de 2026';
+const emailTitular = 'parcerias@cejabrasil.org.br';
+---
+
+<Layout
+	title="Política de Privacidade | CEJA Brasil"
+	description="Saiba como o CEJA Brasil trata dados pessoais neste site: formulários, contato por WhatsApp, cookies de análise e os direitos do titular conforme a LGPD."
+>
+	<section class="bg-ceja-surface py-16 sm:py-20">
+		<div class="mx-auto w-full max-w-3xl px-4 sm:px-6 lg:px-8">
+			<p class="text-sm font-semibold uppercase tracking-[0.2em] text-ceja-blue-a11y">Privacidade e LGPD</p>
+			<h1 class="mt-4 text-4xl font-black leading-tight text-ceja-blue-dark sm:text-5xl">Política de Privacidade</h1>
+			<p class="mt-4 text-sm text-ceja-muted">Última atualização: {atualizadoEm}</p>
+
+			<div class="mt-10 rounded-3xl bg-white p-8 shadow-sm sm:p-10">
+				<p class="text-base leading-relaxed text-ceja-muted">
+					Esta política explica como o CEJA Brasil trata dados pessoais ao usar o site cejabrasil.org.br, em
+					conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018, a LGPD).
+				</p>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">1. Quem é o controlador</h2>
+				<p class="mt-4 text-base leading-relaxed text-ceja-muted">
+					CEJA Brasil, CNPJ 15.409.309/0001-07, com sede na Rua Heloísa Penteado, 327, Vila Esperança, Penha, São
+					Paulo, SP. Canal para assuntos de privacidade:
+					<a href={`mailto:${emailTitular}`} class="font-semibold text-ceja-blue-a11y underline underline-offset-2">{emailTitular}</a>.
+				</p>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">2. Quais dados tratamos e para quê</h2>
+				<ul class="mt-4 list-disc space-y-3 pl-6 text-base leading-relaxed text-ceja-muted">
+					<li>
+						<strong class="text-ceja-dark">Formulários de contato e de parceria de estágio.</strong> Nome, e-mail,
+						telefone, empresa ou instituição, cargo, assunto e mensagem. Usamos esses dados para responder à sua
+						solicitação sobre Jovem Aprendiz, Estágio, Inclusão PCD e parcerias.
+					</li>
+					<li>
+						<strong class="text-ceja-dark">Contato por WhatsApp.</strong> Ao enviar um formulário ou clicar em um
+						botão de WhatsApp, o site abre uma conversa com a mensagem preenchida. O envio é feito por você, no
+						WhatsApp. O site não armazena essas informações em servidor próprio.
+					</li>
+					<li>
+						<strong class="text-ceja-dark">Banco de talentos.</strong> O cadastro de currículo é feito pela conversa
+						no WhatsApp. Os dados que você enviar são usados para as oportunidades de Jovem Aprendiz, Estágio e vagas
+						para PCD.
+					</li>
+					<li>
+						<strong class="text-ceja-dark">Dados de navegação (cookies de análise).</strong> Se você aceitar, usamos o
+						Google Analytics 4 para medir páginas visitadas, cliques em botões de contato e doação, tipo de
+						dispositivo e navegador, e localização aproximada. Não enviamos nome, e-mail, telefone nem o conteúdo de
+						mensagens ao Google Analytics.
+					</li>
+				</ul>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">3. Bases legais</h2>
+				<ul class="mt-4 list-disc space-y-3 pl-6 text-base leading-relaxed text-ceja-muted">
+					<li>Consentimento, para os cookies de análise (art. 7º, I, da LGPD).</li>
+					<li>
+						Atendimento a solicitações feitas por você, para responder a contatos, propostas e cadastros (art. 7º,
+						V, da LGPD).
+					</li>
+				</ul>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">4. Cookies e como controlar</h2>
+				<p class="mt-4 text-base leading-relaxed text-ceja-muted">
+					O Google Analytics só é carregado depois que você clica em "Aceitar" no aviso de cookies. Se clicar em
+					"Recusar", nenhuma medição é enviada. Você pode mudar de ideia a qualquer momento em "Preferências de
+					cookies", no rodapé do site. Ao recusar ou revogar, removemos os cookies de análise deste navegador.
+				</p>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">5. Serviços de terceiros</h2>
+				<ul class="mt-4 list-disc space-y-3 pl-6 text-base leading-relaxed text-ceja-muted">
+					<li>
+						<strong class="text-ceja-dark">Google Analytics (Google LLC).</strong> Medição de uso do site, somente
+						com o seu consentimento.
+					</li>
+					<li>
+						<strong class="text-ceja-dark">Google Maps.</strong> A página de contato incorpora um mapa. Ao abri-la,
+						seu navegador se conecta ao Google, que pode tratar dados como o endereço IP.
+					</li>
+					<li>
+						<strong class="text-ceja-dark">WhatsApp (Meta).</strong> Usado para o atendimento. Valem os termos e a
+						política de privacidade do WhatsApp.
+					</li>
+					<li>
+						<strong class="text-ceja-dark">Doações e Nota Fiscal Paulista.</strong> O pagamento de doações por cartão
+						e o cadastro de notas fiscais acontecem em ambientes externos (checkout da Cielo e portal da Secretaria
+						da Fazenda de SP), com políticas próprias.
+					</li>
+					<li>
+						<strong class="text-ceja-dark">Moodle (EAD).</strong> O acesso aos cursos on-line ocorre em
+						ead.cejabrasil.org.br, plataforma separada deste site.
+					</li>
+				</ul>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">6. Por quanto tempo guardamos os dados</h2>
+				<p class="mt-4 text-base leading-relaxed text-ceja-muted">
+					Guardamos os dados pelo tempo necessário para cumprir as finalidades descritas nesta política e as
+					obrigações legais ou regulatórias aplicáveis. Depois disso, os dados são eliminados ou anonimizados.
+				</p>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">7. Seus direitos</h2>
+				<p class="mt-4 text-base leading-relaxed text-ceja-muted">
+					Conforme o art. 18 da LGPD, você pode solicitar:
+				</p>
+				<ul class="mt-4 list-disc space-y-2 pl-6 text-base leading-relaxed text-ceja-muted">
+					<li>confirmação de que tratamos seus dados e acesso a eles;</li>
+					<li>correção de dados incompletos, inexatos ou desatualizados;</li>
+					<li>anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade;</li>
+					<li>portabilidade dos dados, nos termos da regulamentação;</li>
+					<li>informação sobre com quem compartilhamos seus dados;</li>
+					<li>revogação do consentimento, a qualquer momento.</li>
+				</ul>
+				<p class="mt-4 text-base leading-relaxed text-ceja-muted">
+					Para exercer seus direitos, escreva para
+					<a href={`mailto:${emailTitular}`} class="font-semibold text-ceja-blue-a11y underline underline-offset-2">{emailTitular}</a>.
+					Você também pode apresentar reclamação à Autoridade Nacional de Proteção de Dados (ANPD).
+				</p>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">8. Crianças e adolescentes</h2>
+				<p class="mt-4 text-base leading-relaxed text-ceja-muted">
+					O CEJA Brasil atende adolescentes e jovens. Dados de crianças e adolescentes são tratados em seu melhor
+					interesse, conforme o art. 14 da LGPD.
+				</p>
+
+				<h2 class="mt-10 text-2xl font-bold text-ceja-dark">9. Alterações desta política</h2>
+				<p class="mt-4 text-base leading-relaxed text-ceja-muted">
+					Podemos atualizar esta política para refletir mudanças no site ou na legislação. A data da última
+					atualização fica sempre no topo desta página.
+				</p>
+			</div>
+		</div>
+	</section>
+</Layout>
